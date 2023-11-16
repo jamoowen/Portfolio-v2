@@ -67,16 +67,16 @@ const Nav = () => {
                 </NavigationMenuList>
             </NavigationMenu>
             <div className="flex flex-row items-center gap-5 text-xl shrink-0">
-                <Link href="https://github.com/jamoowen">
+                <Link target="_blank" href="https://github.com/jamoowen">
                     <BsGithub />
                 </Link>
-                <Link href="https://twitter.com/jmsowen24">
+                <Link target="_blank" href="https://twitter.com/jmsowen24">
                     <BsTwitter />
                 </Link>
-                <Link href="https://medium.com/@jamesowen.dev">
+                <Link target="_blank" href="https://medium.com/@jamesowen.dev">
                     <BsMedium />
                 </Link>
-                <Link href="https://www.linkedin.com/in/jamesowen24/">
+                <Link target="_blank" href="https://www.linkedin.com/in/jamesowen24/">
                     <BsLinkedin />
                 </Link>
             </div>

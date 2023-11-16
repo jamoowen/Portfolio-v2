@@ -99,7 +99,7 @@ const Blog = () => {
 
 
     return (
-        <div id="blog" className='w-full h-full min-h-screen overflow-visible text-white bg-opacity-50 bg-sky-950 bg-background'>
+        <div id="blog" className='w-full h-full min-h-screen overflow-visible text-white bg-opacity-50 bg-zinc-800 bg-background'>
             <div className="flex items-center justify-center py-10 text-4xl font-black font-raleway text-opacity-70 sm:text-6xl">
                 Blog
             </div>
@@ -133,7 +133,7 @@ const Blog = () => {
                     <div className="col-span-2 ">
 
                         {blog.item[0] ?
-                            <div className="p-2 border-2 border-windows white rounded-xl ">
+                            <div className="p-2 mb-10 border-2 border-windows white rounded-xl ">
                                 <h2 className="p-2 text-lg font-bold text-black bg-white">{blog.item[articleIndex].title}</h2>
                                 <Link href={blog.item[articleIndex].link} target='_blank'>
                                     <div className="w-full bg-center bg-no-repeat h-52 sm:h-72" style={{ backgroundImage: `url(${blog.item[articleIndex].thumbnail})` }}>
