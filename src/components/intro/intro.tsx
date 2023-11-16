@@ -35,9 +35,9 @@ const Intro = () => {
                 James Owen
             </div>
 
-            <div className="relative grid items-end w-full h-56 grid-cols-6 gap-4 px-2 overflow-hidden text-xl font-bold sm:text-3xl md:gap-4 font-rubik ">
+            <div className="relative grid items-start w-full h-screen grid-cols-6 gap-4 px-2 overflow-hidden text-xl font-bold bg-opacity-10 sm:text-3xl md:gap-4 font-rubik">
 
-                <div onClick={handleClick} className='relative col-start-1 col-end-2 px-2 animate-bounce-temporary text-background '>
+                <div onClick={handleClick} className='absolute top-0 h-32 col-start-1 col-end-2 px-2 w-14 md:w-24 animate-bounce-temporary text-background '>
                     -                <br />.<br />.
                     <Image
 
@@ -49,12 +49,12 @@ const Intro = () => {
                     />
                 </div>
 
-                <div className='col-span-5 col-start-2 '>
+                <div className='col-span-5 col-start-2 mt-3 sm:mt-1'>
                     {start &&
                         <>
                             <div className='gap-2 px-5 '>
                                 <TypeAnimation
-                                    className='items-start justify-start'
+                                    className='items-start '
                                     sequence={[
                                         300,
                                         "Hi",
@@ -117,10 +117,10 @@ const Intro = () => {
                     }
 
                 </div>
-                <div className='col-span-4 col-start-2 px-5 col'>
+                <div className='h-auto col-span-4 col-start-2 px-5 mb-56'>
                     {
                         showButtons &&
-                        <div className='mt-10'>
+                        <div className='z-10 min-h-full '>
                             <SectionButtons />
                         </div>
                     }
