@@ -1,10 +1,10 @@
 'use client'
 
-import { Button } from "@/components/ui/button"
-
 import * as z from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from 'react-hook-form'
+import Link from "next/link"
+import { useState } from "react"
 
 import {
     Form,
@@ -16,15 +16,17 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-// import { useToast } from "@/components/ui/use-toast"
 import { toast } from "@/components/ui/use-toast"
-
 import { Textarea } from "@/components/ui/textarea"
-const axios = require('axios').default;
-import  { AxiosError } from 'axios';
+import { Button } from "@/components/ui/button"
 
-import Link from "next/link"
-import {BsGithub, BsTwitter, BsMedium, BsLinkedin } from 'react-icons/bs'
+const axios = require('axios').default;
+import { AxiosError } from 'axios';
+
+import { BsGithub, BsTwitter, BsMedium, BsLinkedin } from 'react-icons/bs'
+import { AiOutlineLoading3Quarters } from 'react-icons/ai'
+
+
 
 
 
@@ -52,6 +54,7 @@ const Contact = () => {
     })
 
     const submitForm = async (values: z.infer<typeof formSchema>) => {
+        setLoading(true)
         console.log('submitting')
 
         try {
@@ -64,35 +67,29 @@ const Contact = () => {
                     'Content-Type': 'application/json'
                 }
             });
-            console.log(`data: ${data}`)
+           
+            toast({
+                title: "Email sent!",
+                description: "I'll respond to you as soon as possible!",
+            })
         } catch (error) {
             const axiosError = error as AxiosError;
             console.error(axiosError.response?.data);
+            toast({
+                title: "ERROR!!",
+                description: "Unable to send email; please try again or use an alternative form of contact",
+                
+            })
+        } finally {
+            setLoading(false);
         }
-     
 
-        // const response = await fetch('/api/contact', {
-        //     method: 'post',
-        //     body: JSON.stringify(values),
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     }
-
-        // })
-
-        toast({
-            title: "Email sent!",
-            description: "I'll respond to you as soon as possible!",
-        })
-
-        // console.log(values)
+        
     }
 
+    const [loading, setLoading] = useState(false);
+
     return (
-
-
-
-
 
 
         <div id="contact" className='w-full h-full min-h-screen overflow-visible text-white bg-background'>
@@ -147,7 +144,9 @@ const Contact = () => {
                                 </FormItem>
                             )}
                         />
-                        <Button className="bg-windows rounded-[4px] https://www.linkedin.com/in/jamesowen24/" type="submit">Submit</Button>
+                        {loading ? <Button className="bg-windows rounded-[4px] animate-spin" disabled></Button>
+                            : <Button className="bg-windows rounded-[4px] " type="submit">Submit</Button>}
+
                     </form>
                 </Form>
 
