@@ -10,20 +10,21 @@ import {
     NavigationMenuTrigger,
     NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
-import { AiOutlineMenu,  AiFillHome } from "react-icons/ai"
+import { AiOutlineMenu, AiFillHome } from "react-icons/ai"
 import { GrHome } from 'react-icons/gr'
 import React from "react"
 import Link from "next/link"
+import { BsGithub, BsTwitter, BsMedium, BsLinkedin } from 'react-icons/bs'
 
 const Nav = () => {
 
     return (
-        <nav className="sticky z-50 top-0 left-0 bg-background w-full text-white">
-            
+        <nav className="fixed top-0 left-0 z-50 flex flex-row justify-between w-full px-2 text-white shrink-0 bg-background">
+
             <NavigationMenu>
                 <NavigationMenuList>
-                    <NavigationMenuItem className="flex flex-row items-center justify-center gap-2 text-lg px-1">
-                    <Link href="/"><AiFillHome/></Link>
+                    <NavigationMenuItem className="flex flex-row items-center justify-center gap-2 px-1 text-lg">
+                        <Link href="/"><AiFillHome /></Link>
                         <NavigationMenuTrigger className="" >
                             Menu <AiOutlineMenu />
                         </NavigationMenuTrigger>
@@ -65,27 +66,26 @@ const Nav = () => {
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
+            <div className="flex flex-row items-center gap-5 text-xl shrink-0">
+                <Link href="https://github.com/jamoowen">
+                    <BsGithub />
+                </Link>
+                <Link href="https://twitter.com/jmsowen24">
+                    <BsTwitter />
+                </Link>
+                <Link href="https://medium.com/@jamesowen.dev">
+                    <BsMedium />
+                </Link>
+                <Link href="https://www.linkedin.com/in/jamesowen24/">
+                    <BsLinkedin />
+                </Link>
+            </div>
+
 
         </nav>
     )
 }
-// const ListItem = React.forwardRef(({ className, children, title, ...props }, forwardedRef) => (
-//     <li>
-//       <NavigationMenu.Link asChild>
-//         <a
-//           className={classNames(
-//             'focus:shadow-[0_0_0_2px] focus:shadow-violet7 hover:bg-mauve3 block select-none rounded-[6px] p-3 text-[15px] leading-none no-underline outline-none transition-colors',
-//             className
-//           )}
-//           {...props}
-//           ref={forwardedRef}
-//         >
-//   <div className="text-violet12 mb-[5px] font-medium leading-[1.2]">{title}</div>
-//   <p className="text-mauve11 leading-[1.4]">{children}</p>
-//         </a>
-//       </NavigationMenu.Link>
-//     </li>
-//   ));
+
 
 
 export default Nav

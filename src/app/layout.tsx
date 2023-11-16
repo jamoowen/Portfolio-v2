@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { Toaster } from "@/components/ui/toaster"
 
 import { Inter as FontSans, Permanent_Marker as Marker, Raleway,Rubik ,Press_Start_2P, Rubik_Glitch } from "next/font/google"
 import Nav from '../components/nav'
@@ -40,11 +41,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" style={{scrollBehavior:'smooth'}} className={`${fontSans.variable} ${fontMarker.variable} ${fontRaleway.variable} ${font2P.variable} ${fontRubik.variable}`}>
+    <html lang="en"  className={`${fontSans.variable} ${fontMarker.variable} ${fontRaleway.variable} ${font2P.variable} ${fontRubik.variable}`}>
       <body className={`min-h-screen bg-background font-sans antialiased `}>
         <Nav />
-        {children}</body>
+        {children}
+        <Toaster />
+        </body>
 
     </html>
   )
 }
+

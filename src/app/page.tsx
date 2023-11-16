@@ -7,10 +7,11 @@ import Intro from '@/components/intro/intro'
 import About from '@/components/about/about'
 import Projects from '@/components/projects/projects'
 import Contact from '@/components/contact/contact'
+import Blog from '@/components/blog/blog'
 
 export default function Home() {
   return (
-    <main className="  items-center z-0 w-screen ">
+    <main className="  items-center z-0  ">
 
       {/* Page intro */}
       <Intro />
@@ -21,15 +22,20 @@ export default function Home() {
       </Suspense>
 
       {/* PROJECTS (carousel) */}
-      <Suspense fallback={<div>Loading Contact Page...</div>} >
+      <Suspense fallback={<div>Loading Projects Page...</div>} >
         <Projects/>
       </Suspense>
-
+      
+      <Suspense fallback={<div>Loading Blog Page...</div>} >
+        <Blog/>
+      </Suspense>
 
       {/* CONTACT */}
       <Suspense fallback={<div>Loading Contact Page...</div>} >
         <Contact/>
       </Suspense>
+
+      
 
 
 

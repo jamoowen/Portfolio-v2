@@ -19,6 +19,7 @@ module.exports = {
       },
     },
     extend: {
+      
       fontFamily: {
         'sans': ["var(--font-sans)", ...fontFamily.sans],
         'marker': ["var(--font-marker)"],
@@ -28,6 +29,7 @@ module.exports = {
    
       },
       colors: {
+        windows: "#DEDBD5",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -81,7 +83,7 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "animation-container": "flowing-animation 30s linear infinite",
-        "animation-container-follow": "flowing-animation-follow 10s linear infinite",
+        "animation-container-follow": "flowing-animation-follow 40s linear infinite",
         
         
       },

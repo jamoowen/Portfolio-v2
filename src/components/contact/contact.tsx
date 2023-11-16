@@ -1,15 +1,92 @@
-import Link from "next/link"
-import { VscDebugBreakpointDataUnverified } from 'react-icons/vsc'
+'use client'
+
 import { Button } from "@/components/ui/button"
+
+import * as z from "zod"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm } from 'react-hook-form'
+
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
+    Form,
+    FormControl,
+    FormDescription,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+} from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
+// import { useToast } from "@/components/ui/use-toast"
+import { toast } from "@/components/ui/use-toast"
+
+import { Textarea } from "@/components/ui/textarea"
+const axios = require('axios').default;
+import  { AxiosError } from 'axios';
+
+import Link from "next/link"
+import {BsGithub, BsTwitter, BsMedium, BsLinkedin } from 'react-icons/bs'
+
+
+
+
+
+const formSchema = z.object({
+    email: z.string().email({ message: "Invalid email address" }),
+    name: z.string(),
+    message: z.string().min(5, { message: "You need to send a longer message than that!" }).max(3000, { message: "" })
+})
+
+
+
 const Contact = () => {
+    // const { toast } = useToast()
+
+
+    const form = useForm<z.infer<typeof formSchema>>({
+        resolver: zodResolver(formSchema),
+        defaultValues: {
+            email: "",
+            name: "unknown",
+            message: "Hi James! I just had a look through your portfolio, and wanted to reach out..."
+        },
+    })
+
+    const submitForm = async (values: z.infer<typeof formSchema>) => {
+        console.log('submitting')
+
+        try {
+            const { data } = await axios.post('/api/contact', {
+                name: values.name,
+                email: values.email,
+                message: values.message
+            }, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            console.log(`data: ${data}`)
+        } catch (error) {
+            const axiosError = error as AxiosError;
+            console.error(axiosError.response?.data);
+        }
+     
+
+        // const response = await fetch('/api/contact', {
+        //     method: 'post',
+        //     body: JSON.stringify(values),
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     }
+
+        // })
+
+        toast({
+            title: "Email sent!",
+            description: "I'll respond to you as soon as possible!",
+        })
+
+        // console.log(values)
+    }
 
     return (
 
@@ -17,16 +94,87 @@ const Contact = () => {
 
 
 
-        <div id="contact" className='min-h-screen h-full w-screen overflow-visible  text-sky-950 bg-white'>
-            <div className="flex font-raleway  items-center font-black py-10  text-opacity-70 justify-center  sm:text-6xl text-4xl">
+
+        <div id="contact" className='w-full h-full min-h-screen overflow-visible text-white bg-background'>
+            <div className="flex items-center justify-center py-10 text-4xl font-black font-raleway text-opacity-70 sm:text-6xl">
                 Contact Me
             </div>
-            <div className="flex justify-between mx-auto  w-screen h-full sm:text-2xl gap-4 md:gap-4 text-xl font-rubik font-bold  bg-opacity-30">
+            <div className="flex flex-col items-center justify-between w-full h-full gap-4 mx-auto text-xl font-bold sm:text-2xl md:gap-4 font-rubik bg-opacity-30">
+                <Form {...form}>
+                    <form onSubmit={form.handleSubmit(submitForm)} className="w-8/12 mx-auto ">
+                        <FormField
+                            control={form.control}
+                            name="email"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Email</FormLabel>
+                                    <FormControl>
+                                        <Input placeholder="elon@spacex.com" {...field} />
+                                    </FormControl>
+
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name="name"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Name</FormLabel>
+                                    <FormControl>
+                                        <Input placeholder="Elon Musk" />
+                                    </FormControl>
+
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name="message"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>message</FormLabel>
+                                    <FormControl>
+                                        <Textarea
+
+                                            {...field}
+                                        />
+                                    </FormControl>
+
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <Button className="bg-windows rounded-[4px] https://www.linkedin.com/in/jamesowen24/" type="submit">Submit</Button>
+                    </form>
+                </Form>
 
 
-                
+                <div className="flex flex-row gap-5 w-6/12 text-4xl border-2 border-windows p-4 rounded-[4px]  justify-around mt-10">
+                    <Link href="https://github.com/jamoowen">
+                        <BsGithub />
+                    </Link>
+                    <Link href="https://twitter.com/jmsowen24">
+                        <BsTwitter />
+                    </Link>
+                    <Link href="https://medium.com/@jamesowen.dev">
+                        <BsMedium />
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/jamesowen24/">
+                        <BsLinkedin />
+                    </Link>
+
+
+
+
+
+                </div>
+
 
             </div>
+
 
 
         </div>

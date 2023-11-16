@@ -16,33 +16,35 @@ const Intro = () => {
 
 
     const handleClick = () => {
-        console.log('hoho')
+      
         if (!start) {
             setTimeout(() => {
                 setShowButtons(true)
-            }, 14000);
+            }, 16000);
             setStart(true)
         } else {
             router.refresh()
         }
-        console.log('clicked')
+ 
     }
 
     return (
-        <div className='min-h-screen w-screen'>
-            <div className=" flex font-raleway items-center  font-black mt-5 md:mt-10 md:mb-20 mb-10  text-zinc-400 text-opacity-70 justify-center  sm:text-6xl text-4xl">
+        <div className='min-h-screen w-full relative '>
+
+            <div className=" flex font-raleway items-center justify-center font-black py-10 md:mt-10 md:mb-20   text-zinc-400 text-opacity-70   sm:text-6xl text-4xl">
                 James Owen
             </div>
 
-            <div className="grid grid-cols-6 p-2  mx-auto w-full sm:text-3xl h-full gap-4 md:gap-4 text-xl font-rubik font-bold  bg-opacity-30">
+            <div className="grid grid-cols-6 px-2 relative mx-auto w-full sm:text-3xl h-full overflow-hidden gap-4 md:gap-4 text-xl font-rubik font-bold ">
 
-                <div onClick={handleClick} className='col-start-1 bg-red-300 col-end-2 h-6 sm:h-12 relative'>
+                <div onClick={handleClick} className='col-start-1 px-2 text-background col-end-2  relative'>
+                    -                <br />.<br />.
                     <Image
 
                         src="/../images/windows.png"
                         alt='windows start button'
                         fill={true}
-                        className={`cursor-pointer mb-3 text-2xl font-semibold`}
+                        className={`cursor-pointer z-20 object-contain mb-3 text-2xl font-semibold`}
 
                     />
                 </div>
@@ -52,7 +54,7 @@ const Intro = () => {
                         <>
                             <div className=' px-5 gap-2'>
                                 <TypeAnimation
-                                className='items-start justify-start'
+                                    className='items-start justify-start'
                                     sequence={[
                                         300,
                                         "Hi",
@@ -95,7 +97,7 @@ const Intro = () => {
                                 <TypeAnimation
                                     sequence={[
 
-                                        11400, // Waits 1s
+                                        11600, // Waits 1s
                                         "Welcome to my portfolio.",
 
                                         () => {
@@ -111,8 +113,6 @@ const Intro = () => {
 
                                 />
                             </div>
-
-
                         </>
                     }
 
@@ -127,15 +127,11 @@ const Intro = () => {
 
                 </div>
 
-                <div className='-z-30 absolute -bottom-24 sm:-bottom-36 w-full h-full'><Image className='-z-30 opacity-10 grayscale  mx-auto ' fill objectFit='none' sizes='50vw' objectPosition='bottom ' src='/images/road.png' alt='road background' /></div>
-
-                {/* <Image className="fade-image" src="/images/btc_wall.jpg" width={2000} height={1000} alt="bitcoin wallpaper" /> */}
-
             </div>
 
-
-
+            <Image className='-z-10 mt-56 object-fill  opacity-10 ' fill src='/images/mountains-better-1.png' alt='road background' />
         </div>
+
 
 
 
