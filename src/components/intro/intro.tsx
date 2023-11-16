@@ -31,20 +31,20 @@ const Intro = () => {
     return (
         <div className='relative w-full min-h-screen '>
 
-            <div className="flex items-center justify-center py-10 text-4xl font-black font-raleway md:mt-10 md:mb-20 text-zinc-400 text-opacity-70 sm:text-6xl">
+            <div className="flex items-center justify-center py-10 text-4xl font-black font-raleway md:mt-10 md:mb-10 text-zinc-400 text-opacity-70 sm:text-6xl">
                 James Owen
             </div>
 
-            <div className="relative grid w-full h-full grid-cols-6 gap-4 px-2 mx-auto overflow-hidden text-xl font-bold sm:text-3xl md:gap-4 font-rubik ">
+            <div className="relative grid items-end w-full h-56 grid-cols-6 gap-4 px-2 overflow-hidden text-xl font-bold sm:text-3xl md:gap-4 font-rubik ">
 
-                <div onClick={handleClick} className='relative col-start-1 col-end-2 px-2 text-background'>
+                <div onClick={handleClick} className='relative col-start-1 col-end-2 px-2 animate-bounce-temporary text-background '>
                     -                <br />.<br />.
                     <Image
 
                         src="/images/windows-start-xs.png"
                         alt='windows start button'
                         fill
-                        className={`cursor-pointer z-20 max-h-14 object-contain mb-3 text-2xl font-semibold`}
+                        className={`cursor-pointer z-20 max-h-14 w-full md:w-min object-contain mb-3 text-2xl font-semibold`}
 
                     />
                 </div>
@@ -129,7 +129,7 @@ const Intro = () => {
 
             </div>
 
-            <Image className='object-fill mt-56 -z-10 opacity-10 ' fill src='/images/mountains-better-1.png' alt='background mountains' />
+            <Image className='object-none w-full mt-56 -z-10 opacity-10 ' fill src='/images/mountains-better-1.png' alt='background mountains' />
         </div>
 
 

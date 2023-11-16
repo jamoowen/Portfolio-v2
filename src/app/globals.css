@@ -6,7 +6,10 @@
 @tailwind utilities;
 
 
-
+.temporary-bounce {
+  -webkit-animation-iteration-count: 10;
+  animation-iteration-count: 10;
+}
 
 
 @keyframes move-xl {

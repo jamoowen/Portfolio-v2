@@ -90,9 +90,11 @@ module.exports = {
         "move-small": "move-small 25s linear infinite",
         "move-medium": "move-medium 30s linear infinite",
         "move-large": "move-large 35s linear infinite",
-        "move-xl": "move-xl 40s linear infinite"
+        "move-xl": "move-xl 40s linear infinite",
+        "bounce-temporary": " bounce 1s ease-out 5 "
         
       },
+      
     },
   },
   plugins: [require("tailwindcss-animate")],
