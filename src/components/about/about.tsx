@@ -33,8 +33,8 @@ const About = () => {
                         <p>{`Also, I write medium articles on different Web3 Protocols and mechanisms - check `}<Link className="text-purple-800 underline" href="https://medium.com/@jamesowen.dev">this.</Link></p>
                         <br />
                     </div>
-                    <div className='flex flex-row w-11/12 h-10 grid-cols-1 px-2 mx-auto overflow-hidden bg-sky-500 bg-opacity-20 rounded-xl '>
-                        <div className="flex flex-row items-center h-full gap-2 p-1 overflow-hidden w-96 animate-animation-container rounded-xl">
+                    <div className='flex flex-row w-11/12 px-2 mx-auto overflow-hidden bg-sky-500 bg-opacity-20 rounded-xl '>
+                        <div className="flex items-center justify-between w-full row-auto gap-2 p-1 overflow-hidden  animate-animation-container shrink-0 rounded-xl">
                             <TechStack />
                         </div>
 
