@@ -41,10 +41,9 @@ const Intro = () => {
                     -                <br />.<br />.
                     <Image
 
-                        src="/../images/gray-button.png"
+                        src="/images/windows-start-xs.png"
                         alt='windows start button'
-                        fill={true}
-                        sizes='md'
+                        fill
                         className={`cursor-pointer z-20 max-h-14 object-contain mb-3 text-2xl font-semibold`}
 
                     />
