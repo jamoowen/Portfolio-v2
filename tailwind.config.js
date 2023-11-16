@@ -78,13 +78,19 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+     
+ 
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "animation-container": "flowing-animation 30s linear infinite",
         "animation-container-follow": "flowing-animation-follow 40s linear infinite",
-        
+        "move-xs": "move-xs 20s linear infinite",
+        "move-small": "move-small 25s linear infinite",
+        "move-medium": "move-medium 30s linear infinite",
+        "move-large": "move-large 35s linear infinite",
+        "move-xl": "move-xl 40s linear infinite"
         
       },
     },

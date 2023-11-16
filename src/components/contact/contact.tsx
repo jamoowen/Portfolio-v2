@@ -120,7 +120,7 @@ const Contact = () => {
                                 <FormItem>
                                     <FormLabel>Name</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Elon Musk" />
+                                        <Input placeholder="Elon" />
                                     </FormControl>
 
                                     <FormMessage />
@@ -144,8 +144,8 @@ const Contact = () => {
                                 </FormItem>
                             )}
                         />
-                        {loading ? <Button className="bg-windows rounded-[4px] animate-spin" disabled></Button>
-                            : <Button className="bg-windows rounded-[4px] " type="submit">Submit</Button>}
+                        {loading ? <Button className="bg-windows mt-2 font-raleway  rounded-[4px] animate-spin" disabled></Button>
+                            : <Button className="bg-windows mt-2 font-raleway rounded-[4px] " type="submit">Submit</Button>}
 
                     </form>
                 </Form>
@@ -165,17 +165,8 @@ const Contact = () => {
                         <BsLinkedin />
                     </Link>
 
-
-
-
-
                 </div>
-
-
             </div>
-
-
-
         </div>
     )
 }

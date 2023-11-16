@@ -29,30 +29,30 @@ const Intro = () => {
     }
 
     return (
-        <div className='min-h-screen w-full relative '>
+        <div className='relative w-full min-h-screen '>
 
-            <div className=" flex font-raleway items-center justify-center font-black py-10 md:mt-10 md:mb-20   text-zinc-400 text-opacity-70   sm:text-6xl text-4xl">
+            <div className="flex items-center justify-center py-10 text-4xl font-black font-raleway md:mt-10 md:mb-20 text-zinc-400 text-opacity-70 sm:text-6xl">
                 James Owen
             </div>
 
-            <div className="grid grid-cols-6 px-2 relative mx-auto w-full sm:text-3xl h-full overflow-hidden gap-4 md:gap-4 text-xl font-rubik font-bold ">
+            <div className="relative grid w-full h-full grid-cols-6 gap-4 px-2 mx-auto overflow-hidden text-xl font-bold sm:text-3xl md:gap-4 font-rubik ">
 
-                <div onClick={handleClick} className='col-start-1 px-2 text-background col-end-2  relative'>
+                <div onClick={handleClick} className='relative col-start-1 col-end-2 px-2 text-background'>
                     -                <br />.<br />.
                     <Image
 
-                        src="/../images/windows.png"
+                        src="/../images/windows-start.png"
                         alt='windows start button'
                         fill={true}
-                        className={`cursor-pointer z-20 object-contain mb-3 text-2xl font-semibold`}
+                        className={`cursor-pointer z-20 max-h-14 object-contain mb-3 text-2xl font-semibold`}
 
                     />
                 </div>
 
-                <div className='col-start-2 col-span-5 '>
+                <div className='col-span-5 col-start-2 '>
                     {start &&
                         <>
-                            <div className=' px-5 gap-2'>
+                            <div className='gap-2 px-5 '>
                                 <TypeAnimation
                                     className='items-start justify-start'
                                     sequence={[
@@ -117,7 +117,7 @@ const Intro = () => {
                     }
 
                 </div>
-                <div className='col col-start-2 px-5 col-span-4'>
+                <div className='col-span-4 col-start-2 px-5 col'>
                     {
                         showButtons &&
                         <div className='mt-10'>
@@ -129,7 +129,7 @@ const Intro = () => {
 
             </div>
 
-            <Image className='-z-10 mt-56 object-fill  opacity-10 ' fill src='/images/mountains-better-1.png' alt='road background' />
+            <Image className='object-fill mt-56 -z-10 opacity-10 ' fill src='/images/mountains-better-1.png' alt='road background' />
         </div>
 
 

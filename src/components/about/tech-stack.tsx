@@ -39,9 +39,12 @@ const TechStack = () => {
         floatAnimation();
     }
 
+    
+    
+
 
     return (
-        <>
+        <div className='flex flex-row items-center gap-5 p-2 bg-red-300 lg:gap-16 md:gap-10 shrink-0 w-max'>
 
             <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href='https://axios-http.com/'><Image width={40} height={40} alt='tech stack' src="https://api.iconify.design/logos/axios.svg" /></Link>
             <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href='https://zod.dev/'><Image width={40} height={40} alt='tech stack' src="https://api.iconify.design/logos/zod.svg" /></Link>
@@ -62,7 +65,7 @@ const TechStack = () => {
             
             
 
-        </>
+        </div>
     )
 }
 export default TechStack

@@ -6,13 +6,41 @@
 @tailwind utilities;
 
 
+
+
+
+@keyframes move-xl {
+  from {right: 110%;}
+  to {right: -140%;}
+}
+
+@keyframes move-large {
+  from {right: 110%;}
+  to {right: -175%;}
+}
+@keyframes move-medium {
+  from {right: 100%;}
+  to {right: -180%;}
+}
+@keyframes move-small {
+  from {right: 100%;}
+  to {right: -200%;}
+}
+@keyframes move-xs {
+  from {right: 120%;}
+  to {right: -260%;}
+}
+
+
+
 @keyframes flowing-animation {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(100%);
   }
+  
 }
 @keyframes flowing-animation-follow {
   0% {

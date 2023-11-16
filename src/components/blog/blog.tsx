@@ -108,8 +108,8 @@ const Blog = () => {
 
 
                 <div className="grid grid-cols-3 gap-1 mb-4 sm:gap-4 sm:px-2">
-                    <div className="col-span-2 col-start-2">
-                        <h2 className="p-2">All of my medium articles are available on my Medium account: <Link className="text-purple-600 underline" href="https://medium.com/@jamesowen.dev">@jamesowen.dev</Link></h2>
+                    <div className="col-span-3 sm:col-start-2 sm:col-span-2">
+                        <h2 className="p-4 sm:p-2">All of my medium articles are available on my Medium account: <Link className="text-purple-600 underline" href="https://medium.com/@jamesowen.dev">@jamesowen.dev</Link></h2>
                     </div>
                     <div className="col-span-1">
 
@@ -120,7 +120,7 @@ const Blog = () => {
                                 {blog.item ?
                                     blog.item.map((post, index) => (
                                         <div key={post.title}>
-                                            <div onClick={() => handleArticleSelect(index, post.title)} className={`text-sm font-raleway p-2 bg-blend-soft-light cursor-pointer ${articleIndex === index ? 'rounded-xl s shadow-sm shadow-white bg-opacity-30 font-semibold text-white' : null}`}>
+                                            <div onClick={() => handleArticleSelect(index, post.title)} className={`text-xs sm:text-sm font-raleway p-2 bg-blend-soft-light cursor-pointer ${articleIndex === index ? ' shadow-sm shadow-white bg-opacity-30 font-semibold text-white' : null}`}>
                                                 {post.title}
                                             </div>
                                             {/* <Separator className="my-2" /> */}
@@ -134,16 +134,16 @@ const Blog = () => {
 
                         {blog.item[0] ?
                             <div className="p-2 mb-10 border-2 border-windows white rounded-xl ">
-                                <h2 className="p-2 text-lg font-bold text-black bg-white">{blog.item[articleIndex].title}</h2>
+                                <h2 className="p-2 font-bold text-black bg-white text-md sm:text:lg">{blog.item[articleIndex].title}</h2>
                                 <Link href={blog.item[articleIndex].link} target='_blank'>
                                     <div className="w-full bg-center bg-no-repeat h-52 sm:h-72" style={{ backgroundImage: `url(${blog.item[articleIndex].thumbnail})` }}>
                                     </div>
                                 </Link>
-                                <p className="p-2 mt-2 text-sm sm:text-md">
+                                <p className="p-2 mt-2 text-xs sm:text-md">
                                     {`${extractP(blog.item[articleIndex].description.substring(0, 1000))}`}
                                 </p>
                                 ... <br />
-                                <span className="text-sm italic">James Owen {blog.item[articleIndex].pubDate}</span>
+                                <span className="text-xs italic sm:text-sm">James Owen {blog.item[articleIndex].pubDate}</span>
 
                             </div>
                             : <div></div>}
