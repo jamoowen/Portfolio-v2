@@ -129,7 +129,7 @@ const Intro = () => {
 
             </div>
 
-            <Image className='object-fill mt-56 -z-10 opacity-10 ' fill src='/images/mountains-better-1.png' alt='road background' />
+            <Image className='object-fill mt-56 -z-10 opacity-10 ' fill src='/images/mountains-better-1.png' alt='background mountains' />
         </div>
 
 
