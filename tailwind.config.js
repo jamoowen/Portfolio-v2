@@ -91,7 +91,7 @@ module.exports = {
         "move-medium": "move-medium 30s linear infinite",
         "move-large": "move-large 35s linear infinite",
         "move-xl": "move-xl 40s linear infinite",
-        "bounce-temporary": " bounce 1s ease-out 5 "
+        "bounce-temporary": " pulse 1s linear 4 "
         
       },
       
