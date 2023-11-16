@@ -34,7 +34,7 @@ const About = () => {
                         <br />
                     </div>
                     <div className='flex flex-row w-11/12 h-10 grid-cols-1 px-2 mx-auto overflow-hidden bg-sky-500 bg-opacity-20 rounded-xl '>
-                        <div className="items-center h-full gap-2 p-1 overflow-hidden w-96 animate-animation-container rounded-xl">
+                        <div className="flex flex-row items-center h-full gap-2 p-1 overflow-hidden w-96 animate-animation-container rounded-xl">
                             <TechStack />
                         </div>
 
