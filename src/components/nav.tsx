@@ -41,14 +41,14 @@ const Nav = () => {
                                 <li className='focus:shadow-[0_0_0_2px] focus:shadow-violet7 hover:bg-sky-950 block select-none rounded-[6px] p-3 text-[15px] leading-none no-underline outline-none transition-colors' >
                                     <Link href='#projects'>
                                         <div className="mb-[5px] font-medium leading-[1.2]">Projects</div>
-                                        <p className="text-xs opacity-70 leading-[1.4]">Side projects I've worked on in my spare time</p>
+                                        <p className="text-xs opacity-70 leading-[1.4]">Side projects I&apos;ve worked on in my spare time</p>
 
                                     </Link>
                                 </li>
                                 <li className='focus:shadow-[0_0_0_2px] focus:shadow-violet7 hover:bg-sky-950 block select-none rounded-[6px] p-3 text-[15px] leading-none no-underline outline-none transition-colors' >
                                     <Link href='#blog'>
                                         <div className="mb-[5px] font-medium leading-[1.2]">Blog</div>
-                                        <p className="text-xs opacity-70 leading-[1.4]">My medium blog articles - Mostly on Web3 related topics</p>
+                                        <p className="text-xs opacity-70 leading-[1.4]">My Medium blog articles - Mostly on Web3 related topics</p>
 
                                     </Link>
                                 </li>

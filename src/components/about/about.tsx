@@ -54,7 +54,7 @@ const About = () => {
                                     <CardContent className="flex-grow text-sm sm:text-lg">
 
                                         Building Full Stack Web applications with Typescript, React and NextJS. Backend services created with Supabase, PostgresSql. Experience in implementing Authentication,
-                                        Account management features, tabular data with Tanstack Table (React Table). Connected to REST API's, created datasets from scratch, built forms and API endpoints for
+                                        Account management features, tabular data with Tanstack Table (React Table). Connected to REST API&apos;s, created datasets from scratch, built forms and API endpoints for
                                         emailing users, + interacted with many other JS libraries.
                                     </CardContent>
                                     <CardFooter className="text-xs sm:text-sm">
@@ -68,7 +68,7 @@ const About = () => {
                                         <CardTitle className="group-hover:border-b-2 group-hover:border-white">Data Engineering</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
-                                        Developed Data modeling software using Python, Apache Spark, SQL. Created data pipelines using Databricks Lakehouse and AWS and Azure Cloud services. ETL'd data, created logging and error handling,
+                                        Developed Data modeling software using Python, Apache Spark, SQL. Created data pipelines using Databricks Lakehouse and AWS and Azure Cloud services. ETL&apos;d data, created logging and error handling,
                                         queried and performed ad-hoc data analysis. Worked using the SDLC, as well as agile, and managed service requests.
                                     </CardContent>
                                     <CardFooter className="text-xs sm:text-sm">
