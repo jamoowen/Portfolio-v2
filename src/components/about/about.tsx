@@ -18,8 +18,8 @@ const About = () => {
 
 
 
-        <div id="about" className='w-full h-full min-h-screen overflow-visible bg-white text-sky-950'>
-            <div className="flex items-center justify-center py-10 text-4xl font-black font-raleway text-opacity-70 sm:text-6xl">
+        <div id="about" className='w-full h-full min-h-screen overflow-visible bg-white text-zinc-700'>
+            <div className="flex items-center justify-center py-10 text-4xl font-black text-zinc-700 text-opacity-70 font-raleway sm:text-6xl">
                 About me
             </div>
             <div className="flex justify-between w-full h-full gap-4 mx-auto text-xl font-bold sm:text-2xl md:gap-4 font-rubik bg-opacity-30">
@@ -45,11 +45,11 @@ const About = () => {
 
                     </div>
 
-                    <div className="flex flex-col items-center justify-center py-1 border bg-opacity-10 border-background">
+                    <div className="flex flex-col items-center justify-center py-1 bg-opacity-10 border-background">
                         <h2 className="py-10 text-4xl text-background">Core Skills</h2>
                         <div className="grid grid-cols-1 gap-1 mb-2 ml-1 mr-1 lg:grid-cols-3 auto-rows">
                             <Link href="#projects">
-                                <Card className="flex flex-col group f bg-gradient-to-t h-full relative bg-windows text-background border justify-start rounded-[4px]">
+                                <Card className="flex flex-col group h-full relative bg-windows border border-background text-background  justify-start rounded-[4px]">
                                     <CardHeader>
                                         <CardTitle className="group-hover:border-b-2 group-hover:border-background">Web Development</CardTitle>
                                     </CardHeader>
