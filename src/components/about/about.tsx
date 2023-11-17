@@ -27,7 +27,7 @@ const About = () => {
 
                 <div className='flex flex-col w-full h-full gap-5 '>
                     <div className="w-11/12 mx-auto">
-                        <p>{`I'm a Full Stack Developer and Entrepreneur, passionate about decentralization and all things Web3`}</p>
+                        <p>{`I'm a Full Stack Developer and Entrepreneur, passionate about decentralization and all things Web3.`}</p><br/>
                         <p>{`I love creating cool web apps, working with data, reading about the latest developments in Web3, and being involved with almost anything related to technology.`}</p>
                         <br></br>
                         <p>{`Also, I write medium articles on different Web3 Protocols and mechanisms - check `}<Link className="text-purple-800 underline" href="https://medium.com/@jamesowen.dev">this.</Link></p>
@@ -45,13 +45,13 @@ const About = () => {
 
                     </div>
 
-                    <div className="flex flex-col items-center justify-center py-1 border bg-opacity-10 border-sky-500">
-                        <h2 className="py-10 text-4xl">Core Skills</h2>
+                    <div className="flex flex-col items-center justify-center py-1 border bg-opacity-10 border-background">
+                        <h2 className="py-10 text-4xl text-background">Core Skills</h2>
                         <div className="grid grid-cols-1 gap-1 mb-2 ml-1 mr-1 lg:grid-cols-3 auto-rows">
                             <Link href="#projects">
-                                <Card className="flex flex-col group f bg-gradient-to-t h-full relative bg-background border-4 border-sky-500 justify-start rounded-[4px]">
+                                <Card className="flex flex-col group f bg-gradient-to-t h-full relative bg-windows text-background border justify-start rounded-[4px]">
                                     <CardHeader>
-                                        <CardTitle className="group-hover:border-b-2 group-hover:border-white">Web Development</CardTitle>
+                                        <CardTitle className="group-hover:border-b-2 group-hover:border-background">Web Development</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
 
@@ -65,13 +65,13 @@ const About = () => {
                                 </Card>
                             </Link>
                             <Link href="#projects">
-                                <Card className="flex flex-col group h-full relative bg-background border-4 border-sky-500 justify-start  rounded-[4px]">
+                                <Card className="flex flex-col group h-full relative bg-windows text-background border border-background justify-start  rounded-[4px]">
                                     <CardHeader>
-                                        <CardTitle className="group-hover:border-b-2 group-hover:border-white">Data Engineering</CardTitle>
+                                        <CardTitle className="group-hover:border-b-2 group-hover:border-background">Data Engineering</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
-                                        Develop of Data modeling software using Python, Apache Spark, SQL. Create data pipelines using Databricks Lakehouse and AWS and Azure Cloud services. ETL&apos;/ELT, logging and error handling,
-                                        queries and ad-hoc data analysis. Worked using the SDLC, as well as agile, and managed service requests.
+                                        Development of data modeling software using Python, Apache Spark, SQL. Created data pipelines using Databricks Lakehouse and AWS and Azure Cloud services. ETL/ELT, logging and error handling,
+                                        queries and ad-hoc data analysis. Worked using the SDLC, as well as Agile, and managed service requests.
                                     </CardContent>
                                     <CardFooter className="text-xs sm:text-sm">
                                         Additional experience: zsh/bash, SQL Server, On prem data processing, data analytics
@@ -80,9 +80,9 @@ const About = () => {
                             </Link>
                      
                             <Link href="#blog">
-                                <Card className="flex flex-col group  h-full relative bg-background border-4 border-sky-500 justify-start  rounded-[4px]">
+                                <Card className="flex flex-col group  h-full relative bg-windows text-background border border-background justify-start  rounded-[4px]">
                                     <CardHeader>
-                                        <CardTitle className="group-hover:border-b-2 group-hover:border-white">Technical Writing</CardTitle>
+                                        <CardTitle className="group-hover:border-b-2 group-hover:border-background">Technical Writing</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
                                          Technical articles on Web3 Protocols and mechanisms, mainly around the Ethereum ecosystem. Topics include Rollups, Restaking, Decentralized Exchanges, Real World Asset Tokenization, Security etc.
