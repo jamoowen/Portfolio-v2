@@ -52,10 +52,10 @@ const ProjectCard = ({ projectName, projectUrl = null, projectDescription, proje
                 <CardHeader>
                     <CardTitle className="hover:underline ">{projectName}</CardTitle>
                 </CardHeader>
-                <CardContent className="text-sm sm:text-lg py-2">
+                <CardContent className="py-2 text-sm sm:text-lg">
                     <div>
                         {projectUrl ?
-                            <p>Status: <span className="text-green-500">Live </span> <span className=" flex flex-row items-center gap-3 underline"><FaHandPointRight/><Link className="hover:text-indigo-500" href={projectUrl}>{projectUrl}</Link></span></p>
+                            <p>Status: <span className="text-green-500">Live </span> <span className="flex flex-row items-center gap-3 underline "><FaHandPointRight/><Link className="hover:text-indigo-500" target="_blank" href={projectUrl}>{projectUrl}</Link></span></p>
                             : <p>Status: <span className="text-red-600">Not Live</span></p>
                         }
                     </div>
@@ -69,7 +69,7 @@ const ProjectCard = ({ projectName, projectUrl = null, projectDescription, proje
 
 
                 </CardContent>
-                <CardFooter className="bg-white items-center p-2 text-xs sm:text-sm justify-evenly gap-auto">
+                <CardFooter className="items-center p-2 text-xs bg-white sm:text-sm justify-evenly gap-auto">
                     {technologies.length > 0 ? (
                         technologies.map((item: IconKey) => (
                             <Link

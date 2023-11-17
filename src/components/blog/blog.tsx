@@ -139,7 +139,7 @@ const Blog = () => {
                                     <div className="w-full bg-center bg-no-repeat h-52 sm:h-72" style={{ backgroundImage: `url(${blog.item[articleIndex].thumbnail})` }}>
                                     </div>
                                 </Link>
-                                <p className="p-2 mt-2 text-xs sm:text-md">
+                                <p className="p-2 mt-2 text-xs sm:text-lg">
                                     {`${extractP(blog.item[articleIndex].description.substring(0, 1000))}`}
                                 </p>
                                 ... <br />
