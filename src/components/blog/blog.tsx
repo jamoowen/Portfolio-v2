@@ -99,8 +99,8 @@ const Blog = () => {
 
 
     return (
-        <div id="blog" className='w-full h-full min-h-screen overflow-visible text-white bg-opacity-50 bg-zinc-800 bg-background'>
-            <div className="flex items-center justify-center py-10 text-4xl font-black font-raleway text-opacity-70 sm:text-6xl">
+        <div id="blog" className='w-full h-full min-h-screen overflow-visible bg-white text-background border-y border-windows'>
+            <div className="flex items-center justify-center py-10 text-4xl font-bold font-raleway text-opacity-70 sm:text-6xl">
                 Blog
             </div>
 
@@ -113,14 +113,14 @@ const Blog = () => {
                     </div>
                     <div className="col-span-1">
 
-                        <ScrollArea className="flex border-2 rounded-md h-96 shrink border-background">
+                        <ScrollArea className="flex border-2 rounded-md bg-windows h-96 shrink border-background">
                             <div className="p-4">
 
                                 <h4 className="mb-4 font-bold leading-none text-md">Articles</h4>
                                 {blog.item ?
                                     blog.item.map((post, index) => (
                                         <div key={post.title}>
-                                            <div onClick={() => handleArticleSelect(index, post.title)} className={`text-xs sm:text-sm font-raleway p-2 bg-blend-soft-light cursor-pointer ${articleIndex === index ? ' shadow-sm shadow-white bg-opacity-30 font-semibold text-white' : null}`}>
+                                            <div onClick={() => handleArticleSelect(index, post.title)} className={`text-xs sm:text-sm font-raleway p-2 bg-blend-soft-light cursor-pointer ${articleIndex === index ? ' shadow-sm shadow-background bg-opacity-30 font-semibold text-background' : null}`}>
                                                 {post.title}
                                             </div>
                                             {/* <Separator className="my-2" /> */}
@@ -133,8 +133,8 @@ const Blog = () => {
                     <div className="col-span-2 ">
 
                         {blog.item[0] ?
-                            <div className="p-2 mb-10 border-2 border-windows white rounded-xl ">
-                                <h2 className="p-2 font-bold text-black bg-white text-md sm:text:lg">{blog.item[articleIndex].title}</h2>
+                            <div className="p-2 mb-10 border-2 border-background bg-windows rounded-xl ">
+                                <h2 className="p-2 font-bold text-background border-y border-windows text-md sm:text:lg">{blog.item[articleIndex].title}</h2>
                                 <Link href={blog.item[articleIndex].link} target='_blank'>
                                     <div className="w-full bg-center bg-no-repeat h-52 sm:h-72" style={{ backgroundImage: `url(${blog.item[articleIndex].thumbnail})` }}>
                                     </div>

@@ -28,7 +28,7 @@ const Nav = () => {
                         <NavigationMenuTrigger className="" >
                             Menu <AiOutlineMenu />
                         </NavigationMenuTrigger>
-                        <NavigationMenuContent>
+                        <NavigationMenuContent className="bg-background">
 
                             <ul className="z-40 m-0 grid list-none gap-x-[10px] p-[22px] w-[400px] sm:grid-flow-col font-rubik sm:grid-rows-3">
                                 <li className='focus:shadow-[0_0_0_2px] focus:shadow-violet7 hover:bg-sky-950 block select-none rounded-[6px] p-3 text-[15px] leading-none no-underline outline-none transition-colors' >

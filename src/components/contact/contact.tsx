@@ -49,7 +49,7 @@ const Contact = () => {
         defaultValues: {
             email: "",
             name: "unknown",
-            message: "Hi James! I just had a look through your portfolio, and wanted to reach out..."
+            message: "blank message"
         },
     })
 
@@ -93,7 +93,7 @@ const Contact = () => {
 
 
         <div id="contact" className='w-full h-full min-h-screen overflow-visible text-white bg-background'>
-            <div className="flex items-center justify-center py-10 text-4xl font-black font-raleway text-opacity-70 sm:text-6xl">
+            <div className="flex items-center justify-center py-10 text-4xl font-bold font-raleway text-opacity-70 sm:text-6xl">
                 Contact Me
             </div>
             <div className="flex flex-col items-center justify-between w-full h-full gap-4 mx-auto text-xl font-bold sm:text-2xl md:gap-4 font-rubik bg-opacity-30">
@@ -106,7 +106,7 @@ const Contact = () => {
                                 <FormItem>
                                     <FormLabel>Email</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="elon@spacex.com" {...field} />
+                                        <Input placeholder="" />
                                     </FormControl>
 
                                     <FormMessage />
@@ -120,7 +120,7 @@ const Contact = () => {
                                 <FormItem>
                                     <FormLabel>Name</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Elon" />
+                                        <Input placeholder="" />
                                     </FormControl>
 
                                     <FormMessage />
@@ -135,8 +135,10 @@ const Contact = () => {
                                     <FormLabel>message</FormLabel>
                                     <FormControl>
                                         <Textarea
+                                        className="placeholder:text-opacity-10"
+                                        placeholder="Hi James! I just had a look through your portfolio, and wanted to reach out..."
 
-                                            {...field}
+                                           
                                         />
                                     </FormControl>
 

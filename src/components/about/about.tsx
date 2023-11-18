@@ -19,7 +19,7 @@ const About = () => {
 
 
         <div id="about" className='w-full h-full min-h-screen overflow-visible bg-white text-zinc-700'>
-            <div className="flex items-center justify-center py-10 text-4xl font-black text-zinc-700 text-opacity-70 font-raleway sm:text-6xl">
+            <div className="flex items-center justify-center py-10 text-4xl font-bold text-background font-raleway sm:text-6xl">
                 About me
             </div>
             <div className="flex justify-between w-full h-full gap-4 mx-auto text-xl font-bold sm:text-2xl md:gap-4 font-rubik bg-opacity-30">

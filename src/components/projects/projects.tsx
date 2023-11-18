@@ -45,11 +45,11 @@ const Projects = () => {
 
 
 
-        <div id="projects" className='min-h-screen h-full w-full overflow-visible  text-white bg-background'>
-            <div className="flex font-raleway  items-center font-black py-10  text-opacity-70 justify-center  sm:text-6xl text-4xl">
+        <div id="projects" className='w-full h-full min-h-screen overflow-visible text-white bg-background'>
+            <div className="flex items-center justify-center py-10 text-4xl font-bold font-raleway text-opacity-70 sm:text-6xl">
                 Projects
             </div>
-            <div className="items-center mx-auto  w-full h-full justify-center">
+            <div className="items-center justify-center w-full h-full mx-auto">
 
                 <Carousel
                     additionalTransfrom={0}
@@ -105,7 +105,7 @@ const Projects = () => {
                     swipeable
                 >
                     <ProjectCard
-                        projectName="Movie Search"
+                        projectName="Movie Finder"
                         projectUrl="https://movie-searcher-100.vercel.app/"
                         projectDescription="Movie Searching app that allows users to Sign up, search for movies/actors/directors, add/delete movies from their 'watchlist'."
 

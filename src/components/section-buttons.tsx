@@ -27,11 +27,11 @@ const AnimationComponent = () => {
 
     return (
         <>
-            <div className='grid grid-cols-2 md:grid-cols-4 font-raleway font-bold text-xs gap-5 '>
-                <Link href='#about'><Button className="font-extrabold about w-full  hover:bg-white hover:border-4 bg-windows border-sky-800 hover:shadow-md">About</Button></Link>
-                <Link href='#projects'><Button className="font-extrabold projects w-full bg-windows hover:bg-white hover:border-4 border-sky-800 hover:shadow-md">Projects</Button></Link>
-                <Link href='#blog'><Button className="font-extrabold blog w-full bg-windows hover:bg-white hover:border-4 border-sky-800 hover:shadow-md">Blog</Button></Link>
-                <Link href='#contact'><Button className="font-extrabold contact w-full bg-windows hover:bg-white hover:border-4 border-sky-800 hover:shadow-md">Contact</Button></Link>
+            <div className='grid grid-cols-2 gap-5 text-xs font-bold md:grid-cols-4 font-raleway '>
+                <Link href='#about'><Button className="w-full font-extrabold about hover:bg-white bg-windows border-sky-800 hover:shadow-md">About</Button></Link>
+                <Link href='#projects'><Button className="w-full font-extrabold projects bg-windows hover:bg-white border-sky-800 hover:shadow-md">Projects</Button></Link>
+                <Link href='#blog'><Button className="w-full font-extrabold blog bg-windows hover:bg-white border-sky-800 hover:shadow-md">Blog</Button></Link>
+                <Link href='#contact'><Button className="w-full font-extrabold contact bg-windows hover:bg-white border-sky-800 hover:shadow-md">Contact</Button></Link>
 
 
             </div>

@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import SectionButtons from '../section-buttons';
+import { FaHandPointLeft } from "react-icons/fa";
+
 
 const Intro = () => {
     const router = useRouter();
@@ -20,7 +22,7 @@ const Intro = () => {
         if (!start) {
             setTimeout(() => {
                 setShowButtons(true)
-            }, 16000);
+            }, 13000);
             setStart(true)
         } else {
             router.refresh()
@@ -50,7 +52,7 @@ const Intro = () => {
                 </div>
 
                 <div className='col-span-5 col-start-2 mt-3 sm:mt-1'>
-                    {start &&
+                    {start ?
                         <>
                             <div className='gap-2 px-5 '>
                                 <TypeAnimation
@@ -80,8 +82,7 @@ const Intro = () => {
                                         "I'm a developer!",
                                         700,
                                         "I'm a Full Stack Developer, Entrepreneur, and Crypto enthusiast!",
-                                        800,
-                                        "I'm a Full Stack Developer, Entrepreneur, and Crypto Degen.",
+                                   
                                         () => {
                                         },
                                     ]}
@@ -97,7 +98,7 @@ const Intro = () => {
                                 <TypeAnimation
                                     sequence={[
 
-                                        11600, // Waits 1s
+                                        11000, // Waits 1s
                                         "Welcome to my portfolio.",
 
                                         () => {
@@ -114,6 +115,7 @@ const Intro = () => {
                                 />
                             </div>
                         </>
+                        : <div className='flex flex-row gap-2 cursor-default'> <FaHandPointLeft/> Click here </div>
                     }
 
                 </div>
@@ -129,7 +131,7 @@ const Intro = () => {
 
             </div>
 
-            <Image className='object-none w-full mt-56 -z-10 opacity-10 ' fill src='/images/mountains-better-1.png' alt='background mountains' />
+            <Image className='object-none w-full opacity-50 mt-72 -z-10 grayscale ' fill src='/images/mountains-better-1.png' alt='background mountains' />
         </div>
 
 

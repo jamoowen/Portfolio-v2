@@ -50,7 +50,7 @@ const ProjectCard = ({ projectName, projectUrl = null, projectDescription, proje
         <div className="w-10/12 mx-auto " >
             <Card className={bgColor}>
                 <CardHeader>
-                    <CardTitle className="hover:underline ">{projectName}</CardTitle>
+                    <CardTitle className="">{projectName}</CardTitle>
                 </CardHeader>
                 <CardContent className="py-2 text-sm sm:text-lg">
                     <div>
