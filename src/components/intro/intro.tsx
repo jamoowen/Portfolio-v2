@@ -115,7 +115,7 @@ const Intro = () => {
                                 />
                             </div>
                         </>
-                        : <div className='flex flex-row gap-2 cursor-default'> <FaHandPointLeft/> Click here </div>
+                        : <div className='flex flex-row gap-2 mt-2 cursor-default text-windows '> <p className='animate-bounce-left'><FaHandPointLeft/></p> Click here </div>
                     }
 
                 </div>

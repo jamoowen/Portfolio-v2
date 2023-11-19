@@ -18,11 +18,11 @@ const About = () => {
 
 
 
-        <div id="about" className='w-full h-full min-h-screen overflow-visible bg-white text-zinc-700'>
-            <div className="flex items-center justify-center py-10 text-4xl font-bold text-background font-raleway sm:text-6xl">
+        <div id="about" className='w-full h-full min-h-screen overflow-visible bg-white font-raleway text-zinc-700'>
+            <div className="flex items-center justify-center py-10 text-4xl font-bold text-background sm:text-6xl">
                 About me
             </div>
-            <div className="flex justify-between w-full h-full gap-4 mx-auto text-xl font-bold sm:text-2xl md:gap-4 font-rubik bg-opacity-30">
+            <div className="flex justify-between w-full h-full gap-4 mx-auto text-xl sm:text-2xl md:gap-4 bg-opacity-30">
 
 
                 <div className='flex flex-col w-full h-full gap-5 '>

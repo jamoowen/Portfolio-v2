@@ -67,7 +67,7 @@ const Contact = () => {
                     'Content-Type': 'application/json'
                 }
             });
-           
+
             toast({
                 title: "Email sent!",
                 description: "I'll respond to you as soon as possible!",
@@ -78,13 +78,13 @@ const Contact = () => {
             toast({
                 title: "ERROR!!",
                 description: "Unable to send email; please try again or use an alternative form of contact",
-                
+
             })
         } finally {
             setLoading(false);
         }
 
-        
+
     }
 
     const [loading, setLoading] = useState(false);
@@ -92,11 +92,11 @@ const Contact = () => {
     return (
 
 
-        <div id="contact" className='w-full h-full min-h-screen overflow-visible text-white bg-background'>
-            <div className="flex items-center justify-center py-10 text-4xl font-bold font-raleway text-opacity-70 sm:text-6xl">
+        <div id="contact" className='w-full h-full min-h-screen overflow-visible text-white font-raleway bg-background'>
+            <div className="flex items-center justify-center py-10 text-4xl font-bold text-opacity-70 sm:text-6xl">
                 Contact Me
             </div>
-            <div className="flex flex-col items-center justify-between w-full h-full gap-4 mx-auto text-xl font-bold sm:text-2xl md:gap-4 font-rubik bg-opacity-30">
+            <div className="flex flex-col items-center justify-between w-full h-full gap-4 mx-auto text-xl font-bold sm:text-2xl md:gap-4 bg-opacity-30">
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(submitForm)} className="w-8/12 mx-auto ">
                         <FormField
@@ -132,13 +132,13 @@ const Contact = () => {
                             name="message"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>message</FormLabel>
+                                    <FormLabel>Message</FormLabel>
                                     <FormControl>
                                         <Textarea
-                                        className="placeholder:text-opacity-10"
-                                        placeholder="Hi James! I just had a look through your portfolio, and wanted to reach out..."
+                                            className="placeholder:text-opacity-10"
+                                            placeholder="Hi James! I just had a look through your portfolio, and wanted to reach out..."
 
-                                           
+
                                         />
                                     </FormControl>
 
@@ -146,8 +146,11 @@ const Contact = () => {
                                 </FormItem>
                             )}
                         />
-                        {loading ? <Button className="bg-windows mt-2 font-raleway  rounded-[4px] animate-spin" disabled></Button>
-                            : <Button className="bg-windows mt-2 font-raleway rounded-[4px] " type="submit">Submit</Button>}
+
+                        <Button className="bg-windows mt-2 w-24 font-raleway rounded-[4px] " type="submit">
+                            {loading ? <p className="animate-spin"><AiOutlineLoading3Quarters /></p>
+                                : <p>Submit</p>}
+                        </Button>
 
                     </form>
                 </Form>

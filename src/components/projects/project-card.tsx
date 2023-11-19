@@ -47,7 +47,7 @@ const ProjectCard = ({ projectName, projectUrl = null, projectDescription, proje
    
 
     return (
-        <div className="w-10/12 mx-auto " >
+        <div className="w-10/12 mx-auto font-raleway " >
             <Card className={bgColor}>
                 <CardHeader>
                     <CardTitle className="">{projectName}</CardTitle>

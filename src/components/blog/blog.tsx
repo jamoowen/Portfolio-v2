@@ -99,8 +99,8 @@ const Blog = () => {
 
 
     return (
-        <div id="blog" className='w-full h-full min-h-screen overflow-visible bg-white text-background border-y border-windows'>
-            <div className="flex items-center justify-center py-10 text-4xl font-bold font-raleway text-opacity-70 sm:text-6xl">
+        <div id="blog" className='w-full h-full min-h-screen overflow-visible bg-white font-raleway text-background border-y border-windows'>
+            <div className="flex items-center justify-center py-10 text-4xl font-bold text-opacity-70 sm:text-6xl">
                 Blog
             </div>
 
@@ -109,7 +109,7 @@ const Blog = () => {
 
                 <div className="grid grid-cols-3 gap-1 mb-4 sm:gap-4 sm:px-2">
                     <div className="col-span-3 sm:col-start-2 sm:col-span-2">
-                        <h2 className="p-4 sm:p-2">All of my medium articles are available on my Medium account: <Link className="text-purple-600 underline" href="https://medium.com/@jamesowen.dev">@jamesowen.dev</Link></h2>
+                        <h2 className="p-4 sm:p-2">All of my medium articles are available on my Medium page: <Link className="text-purple-600 underline" href="https://medium.com/@jamesowen.dev">@jamesowen.dev</Link></h2>
                     </div>
                     <div className="col-span-1">
 
