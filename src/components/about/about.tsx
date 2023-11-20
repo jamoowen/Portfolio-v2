@@ -27,8 +27,8 @@ const About = () => {
 
                 <div className='flex flex-col w-full h-full gap-5 '>
                     <div className="w-11/12 mx-auto">
-                        <p>{`I'm a Full Stack Developer and Entrepreneur, passionate about decentralization and all things Web3.`}</p><br/>
-                        <p>{`I love creating cool web apps, working with data, reading about the latest developments in Web3, and being involved with almost anything related to technology.`}</p>
+                        <p>{`I'm a Full Stack Developer and Entrepreneur, passionate about building apps that are scalable, provide a great UX, and have real utility.`}</p><br/>
+                        <p>{`I enjoy building cool apps, working with data, reading about the latest developments in Web3, and being involved with almost anything related to technology.`}</p>
                         <br></br>
                         <p>{`Also, I write medium articles on different Web3 Protocols and mechanisms - check `}<Link className="text-purple-800 underline" href="https://medium.com/@jamesowen.dev">this.</Link></p>
                         <br />
@@ -54,10 +54,13 @@ const About = () => {
                                         <CardTitle className="group-hover:border-b-2 group-hover:border-background">Web Development</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
+                                        As a Full Stack Web Developer, I have experience building applications with Typescript, React and NextJS.
+                                        I have used Supabase, the free Firebase alternative, for my backends. Common features I have implemented are 
+                                        User Authentication, data fetching, state management, form creation and handling, rendering large quantities of data into tables, 
+                                        creating datasets from scratch, advanced SQL queries and DB optimization, protected routes + much more.
+                                        I have interacted with many different JS libraries such as Tanstack table, React-form, Nodemailer, Zustand, Axios, etc.
 
-                                        Building Full Stack Web applications with Typescript, React and NextJS. Backend services created with Supabase, PostgresSql. Experience in implementing Authentication,
-                                        Account management features, tabular data with Tanstack Table (React Table). Connected to REST API&apos;s, created datasets from scratch, built forms and API endpoints for
-                                        emailing users, + interacted with many other JS libraries.
+                
                                     </CardContent>
                                     <CardFooter className="text-xs sm:text-sm">
                                         Additional experience: Flask, Selenium, Beautiful Soup
@@ -88,7 +91,7 @@ const About = () => {
                                          Technical articles on Web3 Protocols and mechanisms, mainly around the Ethereum ecosystem. Topics include Rollups, Restaking, Decentralized Exchanges, Real World Asset Tokenization, Security etc.
                                     </CardContent>
                                     <CardFooter className="text-xs sm:text-sm">
-                                        Additionall experience: Posts threads of similar content on Twitter
+                                        Additional experience: Posts threads of similar content on Twitter
                                     </CardFooter>
                                 </Card>
                             </Link>
