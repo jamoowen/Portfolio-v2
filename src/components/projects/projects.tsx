@@ -115,6 +115,19 @@ const Projects = () => {
                         technologies={['typescript', 'nextjs', 'react', 'supabase', 'python', 'apache_spark', 'postgresql']}
                         bgColor="border-4 border-teal-400 bg-background "
                     />
+                    <ProjectCard
+                        projectName="Restaurant Resolver"
+                        projectUrl="https://restaurant-resolver.vercel.app/"
+                        projectDescription="App which creates a tournament bracket and decides on a winner, given a list of restaurants as inputs. 
+                        Results can be automatically emailed to a list of recipients."
+
+                        projectFeatures="Built with Typescript, NextJS. Zustand used for state management. Nodemailer used to send results to recipients.
+                        Lots of React used to handle state changes and form submission. 
+
+                        All components styled with Tailwind CSS."
+                        technologies={['typescript', 'nextjs', 'react', 'zustand', 'axios' ,'css','node']} 
+                        bgColor="border-4 border-yellow-500 bg-background"
+                        />
 
                     <ProjectCard
                         projectName="Portfolio Site"

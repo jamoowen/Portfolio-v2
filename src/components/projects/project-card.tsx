@@ -25,7 +25,8 @@ const iconMap = {
     "css": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     "node": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     "zod": "https://api.iconify.design/logos/zod.svg",
-    "axios": "https://api.iconify.design/logos/axios.svg"
+    "axios": "https://api.iconify.design/logos/axios.svg",
+    "zustand": "https://github.com/pmndrs/zustand/blob/main/examples/demo/public/logo192.png?raw=true"
 }
 
 
