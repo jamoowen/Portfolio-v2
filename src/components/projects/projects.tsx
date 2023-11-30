@@ -105,6 +105,7 @@ const Projects = () => {
                     swipeable
                 >
                     <ProjectCard
+                        githubRepo="https://github.com/jamoowen/Movie-Searcher"
                         projectName="Movie Finder"
                         projectUrl="https://movie-searcher-100.vercel.app/"
                         projectDescription="Movie Searching app that allows users to Sign up, search for movies/actors/directors, add/delete movies from their 'watchlist'."
@@ -116,6 +117,7 @@ const Projects = () => {
                         bgColor="border-4 border-teal-400 bg-background "
                     />
                     <ProjectCard
+                        githubRepo="https://github.com/jamoowen/restaurant-resolver"
                         projectName="Restaurant Resolver"
                         projectUrl="https://restaurant-resolver.vercel.app/"
                         projectDescription="App which creates a tournament bracket and decides on a winner, given a list of restaurants as inputs. 
@@ -125,11 +127,12 @@ const Projects = () => {
                         Lots of React used to handle state changes and form submission. 
 
                         All components styled with Tailwind CSS."
-                        technologies={['typescript', 'nextjs', 'react', 'zustand', 'axios' ,'css','node']} 
+                        technologies={['typescript', 'nextjs', 'react', 'zustand', 'axios', 'css', 'node']}
                         bgColor="border-4 border-yellow-500 bg-background"
-                        />
+                    />
 
                     <ProjectCard
+                        githubRepo="https://github.com/jamoowen/Portfolio-v2"
                         projectName="Portfolio Site"
                         projectUrl="https://james-owen.xyz/"
                         projectDescription="Portfolio Website."
@@ -139,9 +142,9 @@ const Projects = () => {
 
                          ShadcnUI used for cards and menu item. All other components/styling done with Tailwind CSS.
                         react-multi-carousel used for carousel implementation"
-                        technologies={['typescript', 'nextjs', 'react', 'zod', 'axios' ,'css','node']} 
+                        technologies={['typescript', 'nextjs', 'react', 'zod', 'axios', 'css', 'node']}
                         bgColor="border-4 border-sky-500 bg-background"
-                        />
+                    />
 
 
                 </Carousel>

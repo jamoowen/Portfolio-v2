@@ -58,7 +58,7 @@ const About = () => {
                                         I have used Supabase, the free Firebase alternative, for my backends. Common features I have implemented are 
                                         User Authentication, data fetching, state management, form creation and handling, rendering large quantities of data into tables, 
                                         creating datasets from scratch, advanced SQL queries and DB optimization, protected routes + much more.
-                                        I have interacted with many different JS libraries such as Tanstack table, React-form, Nodemailer, Zustand, Axios, etc.
+                                        I have interacted with many different JS libraries such as Zustand, Tanstack table, React-form, Nodemailer, Axios, etc.
 
                 
                                     </CardContent>

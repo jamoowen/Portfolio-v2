@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card"
 import Link from "next/link";
 import Image from "next/image";
-import { FaHandPointRight } from 'react-icons/fa'
+import { FaHandPointRight, FaGithub } from 'react-icons/fa'
 
 const iconMap = {
     "javascript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
@@ -36,6 +36,7 @@ type TechnologyList = IconKey[];
 
 
 interface ProjectProps {
+    githubRepo: string;
     projectName: string;
     projectUrl?: string | null;
     projectDescription: string;
@@ -44,17 +45,19 @@ interface ProjectProps {
     bgColor: string;
 }
 
-const ProjectCard = ({ projectName, projectUrl = null, projectDescription, projectFeatures, technologies, bgColor }: ProjectProps) => {
+const ProjectCard = ({githubRepo, projectName, projectUrl = null, projectDescription, projectFeatures, technologies, bgColor }: ProjectProps) => {
    
 
     return (
         <div className="w-10/12 mx-auto font-raleway " >
             <Card className={bgColor}>
                 <CardHeader>
-                    <CardTitle className="">{projectName}</CardTitle>
+                    <CardTitle className="flex gap-5">{projectName} <Link target="_blank" href={githubRepo}><FaGithub/></Link>  </CardTitle>
+                  
                 </CardHeader>
                 <CardContent className="py-2 text-sm sm:text-lg">
                     <div>
+                        
                         {projectUrl ?
                             <p>Status: <span className="text-green-500">Live </span> <span className="flex flex-row items-center gap-3 underline "><FaHandPointRight/><Link className="hover:text-indigo-500" target="_blank" href={projectUrl}>{projectUrl}</Link></span></p>
                             : <p>Status: <span className="text-red-600">Not Live</span></p>
