@@ -28,9 +28,9 @@ const About = () => {
                 <div className='flex flex-col w-full h-full gap-5 '>
                     <div className="w-11/12 mx-auto">
                         <p>{`I'm a Full Stack Developer and Entrepreneur, passionate about building apps that are scalable, provide a great UX, and have real utility.`}</p><br/>
-                        <p>{`I enjoy building cool apps, working with data, reading about the latest developments in Web3, and being involved with almost anything related to technology.`}</p>
+                        <p>{`I spend most of my time creating cool apps, working with data, reading about the latest developments in Web3, and being involved with almost anything related to technology.`}</p>
                         <br></br>
-                        <p>{`Also, I write medium articles on different Web3 Protocols and mechanisms - check `}<Link className="text-purple-800 underline" href="https://medium.com/@jamesowen.dev">this.</Link></p>
+                        <p>{`Also, I have a medium blog where I have written various articles relating to Web2 and Web3 topics - check `}<Link className="text-purple-800 underline" href="https://medium.com/@jamesowen.dev">this.</Link></p>
                         <br />
                     </div>
 
