@@ -147,9 +147,9 @@ const Contact = () => {
                             )}
                         />
 
-                        <Button className="bg-windows mt-2 w-24 font-raleway rounded-[4px] " type="submit">
+                        <Button className="bg-windows mt-2 font-bold w-24 font-raleway rounded-[4px] " type="submit">
                             {loading ? <p className="animate-spin"><AiOutlineLoading3Quarters /></p>
-                                : <p>Submit</p>}
+                                : <p>Send</p>}
                         </Button>
 
                     </form>

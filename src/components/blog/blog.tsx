@@ -7,11 +7,15 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link";
 import { stringify } from "querystring";
+import { json } from "stream/consumers";
+import { parse } from 'rss-to-json'
+
+
 
 
 
 const Blog = () => {
-    const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@jamesowen.dev";
+    const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40jamesowen.dev";
 
     // types
     interface Profile {
@@ -55,27 +59,35 @@ const Blog = () => {
 
 
     useEffect(() => {
-        axios.get(mediumURL)
-            .then((info: AxiosResponse) => {
-                // const image = info.data.feed.image;
-                // console.log(`image: ${image}`)
-                // const link = info.data.feed.link;
-                // console.log(`link: ${link}`)
-                const blogs = info.data.items;
-                // console.log(`blogs: ${blogs}`)
-                const posts = blogs.filter((post: BlogItem) => post.categories.length > 0)
-
-
+        async function fetchData() {
+            try {
+                const response = await axios.get(mediumURL);
+                // const image = response.data.feed.image;
+                // console.log(`image: ${image}`);
+                // const link = response.data.feed.link;
+                // console.log(`link: ${link}`);
+                const blogs = response.data.items;
+                // console.log(`blogs: ${blogs}`);
+                const posts = blogs.filter((post: BlogItem) => post.categories.length > 0);
 
                 // setSelectedArticle(posts[0].title);
                 // setProfile(p => ({ ...p, profileUrl: link, profileImage: image }));
                 setBlog({ item: posts, isLoading: false, error: null });
+            } catch (error) {
+                if (error instanceof Error) {
+                    setBlog({ item: [], isLoading: false, error: error.message });
+                }
+                else {
+                    console.log('ERORR LOADING BLOG DATA:', error)
+                }
+                
+            }
+        }
 
-            })
-            .catch((err: AxiosError) => setBlog({ item: [], isLoading: false, error: err.message }));
+        fetchData();
 
 
-    }, [axios])
+    }, [])
 
     // console.log(blog)
 

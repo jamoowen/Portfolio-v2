@@ -26,7 +26,9 @@ const iconMap = {
     "node": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     "zod": "https://api.iconify.design/logos/zod.svg",
     "axios": "https://api.iconify.design/logos/axios.svg",
-    "zustand": "https://github.com/pmndrs/zustand/blob/main/examples/demo/public/logo192.png?raw=true"
+    "zustand": "https://github.com/pmndrs/zustand/blob/main/examples/demo/public/logo192.png?raw=true",
+    "redis": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    "nextauth": "https://next-auth.js.org/img/logo/logo-sm.png"
 }
 
 

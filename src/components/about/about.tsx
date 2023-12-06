@@ -28,7 +28,7 @@ const About = () => {
                 <div className='flex flex-col w-full h-full gap-5 '>
                     <div className="w-11/12 mx-auto">
                         <p>{`I'm a Full Stack Developer and Entrepreneur, passionate about building apps that are scalable, provide a great UX, and have real utility.`}</p><br/>
-                        <p>{`I spend most of my time creating cool apps, working with data, reading about the latest developments in Web3, and being involved with almost anything related to technology.`}</p>
+                        <p>{`I spend most of my time creating cool apps, reading about the latest developments in tech, and boxing.`}</p>
                         <br></br>
                         <p>{`Also, I have a medium blog where I have written various articles relating to Web2 and Web3 topics - check `}<Link className="text-purple-800 underline" href="https://medium.com/@jamesowen.dev">this.</Link></p>
                         <br />
@@ -49,9 +49,9 @@ const About = () => {
                         <h2 className="py-10 text-4xl text-background">Core Skills</h2>
                         <div className="grid grid-cols-1 gap-1 mb-2 ml-1 mr-1 lg:grid-cols-3 auto-rows">
                             <Link href="#projects">
-                                <Card className="flex flex-col group h-full relative bg-windows border border-background text-background  justify-start rounded-[4px]">
+                                <Card className="flex flex-col hover:bg-opacity-50 group h-full relative bg-windows border border-background text-background  justify-start rounded-[4px]">
                                     <CardHeader>
-                                        <CardTitle className="group-hover:border-b-2 group-hover:border-background">Web Development</CardTitle>
+                                        <CardTitle className="">Web Development</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
                                         As a Full Stack Web Developer, I have experience building applications with Typescript, React and NextJS.
@@ -68,9 +68,9 @@ const About = () => {
                                 </Card>
                             </Link>
                             <Link href="#projects">
-                                <Card className="flex flex-col group h-full relative bg-windows text-background border border-background justify-start  rounded-[4px]">
+                                <Card className="flex flex-col hover:bg-opacity-50 group h-full relative bg-windows text-background border border-background justify-start  rounded-[4px]">
                                     <CardHeader>
-                                        <CardTitle className="group-hover:border-b-2 group-hover:border-background">Data Engineering</CardTitle>
+                                        <CardTitle className="">Data Engineering</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
                                         Development of data modeling software using Python, Apache Spark, SQL. Created data pipelines using Databricks Lakehouse and AWS and Azure Cloud services. ETL/ELT, logging and error handling,
@@ -83,9 +83,9 @@ const About = () => {
                             </Link>
                      
                             <Link href="#blog">
-                                <Card className="flex flex-col group  h-full relative bg-windows text-background border border-background justify-start  rounded-[4px]">
+                                <Card className="flex flex-col hover:bg-opacity-50 group  h-full relative bg-windows text-background border border-background justify-start  rounded-[4px]">
                                     <CardHeader>
-                                        <CardTitle className="group-hover:border-b-2 group-hover:border-background">Technical Writing</CardTitle>
+                                        <CardTitle className="">Technical Writing</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
                                          Technical articles on Web3 Protocols and mechanisms, mainly around the Ethereum ecosystem. Topics include Rollups, Restaking, Decentralized Exchanges, Real World Asset Tokenization, Security etc.

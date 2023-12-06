@@ -23,14 +23,14 @@ const Nav = () => {
 
             <NavigationMenu>
                 <NavigationMenuList>
-                    <NavigationMenuItem className="flex flex-row items-center justify-center gap-2 px-1 text-lg">
+                    <NavigationMenuItem className="flex flex-row items-center justify-center px-1 text-lg">
                         <Link href="/"><AiFillHome /></Link>
-                        <NavigationMenuTrigger className="" >
+                        <NavigationMenuTrigger className=" gap-1" >
                             Menu <AiOutlineMenu />
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="bg-background">
 
-                            <ul className="z-40 m-0 grid list-none gap-x-[10px] p-[22px] w-[400px] sm:grid-flow-col font-rubik sm:grid-rows-3">
+                            <ul className="z-40 m-0 grid list-none gap-x-[10px] p-[22px] w-[400px] sm:grid-flow-col font-rubik grid-rows-4">
                                 <li className='focus:shadow-[0_0_0_2px] focus:shadow-violet7 hover:bg-sky-950 block select-none rounded-[6px] p-3 text-[15px] leading-none no-underline outline-none transition-colors' >
                                     <Link href='#about'>
                                         <div className="mb-[5px] font-medium leading-[1.2]">About</div>

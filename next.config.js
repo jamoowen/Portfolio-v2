@@ -14,6 +14,18 @@ const nextConfig = {
                 hostname: "github.com",
                 port: "",
             },
+            {
+                protocol: "https",
+                hostname: "next-auth.js.org",
+                port: "",
+            },
+            {
+                protocol: "https",
+                hostname: "www.toptal.com",
+                port: "",
+            },
+            // https://www.toptal.com/developers/feed2json/convert?url=https://medium.com/feed/@jamesowen.dev
+            
 
         ]
     }

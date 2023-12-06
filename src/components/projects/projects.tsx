@@ -130,6 +130,19 @@ const Projects = () => {
                         technologies={['typescript', 'nextjs', 'react', 'zustand', 'axios', 'css', 'node']}
                         bgColor="border-4 border-yellow-500 bg-background"
                     />
+                    <ProjectCard
+                        githubRepo="https://github.com/jamoowen/real-messenger"
+                        projectName="Real Messenger"
+                        projectUrl={null}
+                        projectDescription="Instant messaging App"
+
+                        projectFeatures="Blazingly fast instant messaging app created with Typescript/NextJS. Redis used for backend, optimizing speed of read/write operations.
+                        Webhooks implemented with Pusher, that subscribe users to realtime events (new friend requests, messages etc.). Auth implemented with Next Auth. Zod used for input validation, 
+                        CLSX for rendering classnames conditionally, Lucide Icons, Base UI, React-Hot-Toast ++ 
+                    "
+                        technologies={['typescript', 'nextjs', 'react', 'redis', 'nextauth', 'zod', 'axios',]}
+                        bgColor="border-4 border-indigo-500 bg-background"
+                    />
 
                     <ProjectCard
                         githubRepo="https://github.com/jamoowen/Portfolio-v2"
@@ -145,6 +158,7 @@ const Projects = () => {
                         technologies={['typescript', 'nextjs', 'react', 'zod', 'axios', 'css', 'node']}
                         bgColor="border-4 border-sky-500 bg-background"
                     />
+                    
 
 
                 </Carousel>

@@ -98,7 +98,7 @@ const Intro = () => {
                                 <TypeAnimation
                                     sequence={[
 
-                                        11000, // Waits 1s
+                                        10000, // Waits 1s
                                         "Welcome to my portfolio.",
 
                                         () => {
