@@ -22,7 +22,7 @@ const Intro = () => {
         if (!start) {
             setTimeout(() => {
                 setShowButtons(true)
-            }, 13000);
+            }, 11000);
             setStart(true)
         } else {
             router.refresh()
@@ -98,7 +98,7 @@ const Intro = () => {
                                 <TypeAnimation
                                     sequence={[
 
-                                        10000, // Waits 1s
+                                        9500, // Waits 1s
                                         "Welcome to my portfolio.",
 
                                         () => {
