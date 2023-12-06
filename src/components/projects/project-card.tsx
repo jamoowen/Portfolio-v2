@@ -39,6 +39,7 @@ type TechnologyList = IconKey[];
 
 interface ProjectProps {
     githubRepo: string;
+    imageUrl: string;
     projectName: string;
     projectUrl?: string | null;
     projectDescription: string;
@@ -47,11 +48,11 @@ interface ProjectProps {
     bgColor: string;
 }
 
-const ProjectCard = ({githubRepo, projectName, projectUrl = null, projectDescription, projectFeatures, technologies, bgColor }: ProjectProps) => {
+const ProjectCard = ({githubRepo, imageUrl, projectName, projectUrl = null, projectDescription, projectFeatures, technologies, bgColor }: ProjectProps) => {
    
 
     return (
-        <div className="w-10/12 mx-auto font-raleway " >
+        <div className="w-10/12 mx-auto font-raleway mb-2 " >
             <Card className={bgColor}>
                 <CardHeader>
                     <CardTitle className="flex gap-5">{projectName} <Link target="_blank" href={githubRepo}><FaGithub/></Link>  </CardTitle>
@@ -64,6 +65,14 @@ const ProjectCard = ({githubRepo, projectName, projectUrl = null, projectDescrip
                             <p>Status: <span className="text-green-500">Live </span> <span className="flex flex-row items-center gap-3 underline "><FaHandPointRight/><Link className="hover:text-indigo-500" target="_blank" href={projectUrl}>{projectUrl}</Link></span></p>
                             : <p>Status: <span className="text-red-600">Not Live</span></p>
                         }
+                    </div>
+                    <div className=" relative">
+                        <Image 
+                        src={imageUrl}
+                        alt={`Image of project: ${projectName}`}
+                        height={500}
+                        width={800}
+                        /> 
                     </div>
                     <p className="mt-5">
                         {projectDescription}

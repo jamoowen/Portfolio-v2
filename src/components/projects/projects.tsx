@@ -106,6 +106,7 @@ const Projects = () => {
                 >
                     <ProjectCard
                         githubRepo="https://github.com/jamoowen/Movie-Searcher"
+                        imageUrl = "/images/movie.png"
                         projectName="Movie Finder"
                         projectUrl="https://movie-searcher-100.vercel.app/"
                         projectDescription="Movie Searching app that allows users to Sign up, search for movies/actors/directors, add/delete movies from their 'watchlist'."
@@ -118,6 +119,7 @@ const Projects = () => {
                     />
                     <ProjectCard
                         githubRepo="https://github.com/jamoowen/restaurant-resolver"
+                        imageUrl = "/images/restaurant.png"
                         projectName="Restaurant Resolver"
                         projectUrl="https://restaurant-resolver.vercel.app/"
                         projectDescription="App which creates a tournament bracket and decides on a winner, given a list of restaurants as inputs. 
@@ -132,6 +134,7 @@ const Projects = () => {
                     />
                     <ProjectCard
                         githubRepo="https://github.com/jamoowen/real-messenger"
+                        imageUrl = "/images/messenger.png"
                         projectName="Real Messenger"
                         projectUrl={null}
                         projectDescription="Instant messaging App"
@@ -146,6 +149,7 @@ const Projects = () => {
 
                     <ProjectCard
                         githubRepo="https://github.com/jamoowen/Portfolio-v2"
+                        imageUrl = "/images/portfolio.png"
                         projectName="Portfolio Site"
                         projectUrl="https://james-owen.xyz/"
                         projectDescription="Portfolio Website."
