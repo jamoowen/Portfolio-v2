@@ -32,7 +32,7 @@ export const fontRubik = Rubik({
 
 export const metadata: Metadata = {
   title: 'James Owen',
-  description: 'Full Stack Web2 and Web3 Developer',
+  description: 'Web developer',
 }
 
 export default function RootLayout({

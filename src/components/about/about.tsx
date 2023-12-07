@@ -27,7 +27,7 @@ const About = () => {
 
                 <div className='flex flex-col w-full h-full gap-5 '>
                     <div className="w-11/12 mx-auto">
-                        <p>{`I'm a Full Stack Developer and Entrepreneur, passionate about building apps that are scalable, provide a great UX, and have real utility.`}</p><br/>
+                        <p>{`I'm a Web Developer and Entrepreneur, passionate about building apps that are scalable, provide a great UX, and have real utility.`}</p><br/>
                         <p>{`I spend most of my time creating cool apps, reading about the latest developments in tech, and boxing.`}</p>
                         <br></br>
                         <p>{`Also, I have a medium blog where I have written various articles relating to Web2 and Web3 topics - check `}<Link className="text-purple-800 underline" href="https://medium.com/@jamesowen.dev">this.</Link></p>
@@ -54,7 +54,7 @@ const About = () => {
                                         <CardTitle className="">Web Development</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
-                                        As a Full Stack Web Developer, I have experience building applications with Typescript, React and NextJS.
+                                        As a Web Developer, I have experience building applications with Typescript, React and NextJS.
                                         I have used Supabase, the free Firebase alternative, for my backends. Common features I have implemented are 
                                         User Authentication, data fetching, state management, form creation and handling, rendering large quantities of data into tables, 
                                         creating datasets from scratch, advanced SQL queries and DB optimization, protected routes + much more.
