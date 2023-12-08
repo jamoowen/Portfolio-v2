@@ -38,7 +38,7 @@ const About = () => {
                         <br />
                     </div>
 
-                    <div className='relative w-11/12 mx-auto overflow-hidden h-14 bg-sky-950 bg-opacity-20 rounded-xl'>
+                    <div className='relative  w-11/12 mx-auto overflow-hidden h-14 bg-sky-950 bg-opacity-20 rounded-xl'>
                         
                         <div className="absolute px-2 right-full animate-move-xs sm:animate-move-small md:animate-move-medium lg:animate-move-large xl:animate-move-xl rounded-xl ">
                             <TechStack />
@@ -79,7 +79,7 @@ const About = () => {
                                     <CardContent className="flex-grow text-sm sm:text-lg">
                                         As a Data Engineer, I used Python and Apache spark to extract, transform and load data. I predominantly used the Databricks Lakehouse platform and the Pyspark
                                         library for the data transformations and cleaning. I worked with AWS, but more extensively with Azure and tools like Azure Devops, Data Factory and Blob storage.
-                                        I independetly created pipelines and was 
+                                        I independently created pipelines and was solely responsible for various production deployments. 
 
                                     </CardContent>
                                     <CardFooter className="text-xs sm:text-sm">
