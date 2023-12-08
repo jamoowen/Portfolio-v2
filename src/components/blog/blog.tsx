@@ -125,7 +125,7 @@ const Blog = () => {
                     </div>
                     <div className="col-span-1">
 
-                        <ScrollArea className="flex border-2 rounded-md bg-windows h-96 shrink border-background">
+                        <ScrollArea className="flex border-2 rounded-[3px] bg-windows h-96 shrink border-background">
                             <div className="p-4">
 
                                 <h4 className="mb-4 font-bold leading-none text-md">Articles</h4>
@@ -145,7 +145,7 @@ const Blog = () => {
                     <div className="col-span-2 ">
 
                         {blog.item[0] ?
-                            <div className="p-2 mb-10 border-2 border-background bg-windows rounded-xl ">
+                            <div className="p-2 mb-10 border-2 border-background bg-windows rounded-[3px]">
                                 <h2 className="p-2 font-bold text-background border-y border-windows text-md sm:text:lg">{blog.item[articleIndex].title}</h2>
                                 <Link href={blog.item[articleIndex].link} target='_blank'>
                                     <div className="w-full bg-center bg-no-repeat h-52 sm:h-72" style={{ backgroundImage: `url(${blog.item[articleIndex].thumbnail})` }}>

@@ -156,7 +156,7 @@ const Contact = () => {
                 </Form>
 
 
-                <div className="flex flex-row gap-5 w-8/12 md:w-6/12 text-4xl border-2 border-windows p-4 rounded-[4px]  justify-around mt-10">
+                <div className="flex flex-row gap-5 w-8/12 text-4xl border-2 border-windows p-4 rounded-[4px]  justify-around mt-10">
                     <Link target='_blank' href="https://github.com/jamoowen">
                         <BsGithub />
                     </Link>

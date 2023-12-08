@@ -26,11 +26,15 @@ const About = () => {
 
 
                 <div className='flex flex-col w-full h-full gap-5 '>
-                    <div className="w-11/12 mx-auto">
+                    <div className="w-8/12 mx-auto">
                         <p>{`I'm a Web Developer and Entrepreneur, passionate about building apps that are scalable, provide a great UX, and have real utility.`}</p><br/>
-                        <p>{`I spend most of my time creating cool apps, reading about the latest developments in tech, and boxing.`}</p>
+                        <p>{`I have a background in Data Engineering and have spent a lot of time working with Python, SQL and the Azure cloud.
+                            I Studied in South Africa, at the University of the Witwatersrand, and graduated with a Bachelor of Commerce, majoring in Corporate Finance 
+                            and Investment.
+                        `}</p>
                         <br></br>
-                        <p>{`Also, I have a medium blog where I have written various articles relating to Web2 and Web3 topics - check `}<Link className="text-purple-800 underline" href="https://medium.com/@jamesowen.dev">this.</Link></p>
+                        <p>{`Additionally, I am a big proponent of decentralization and Web3, and have written 
+                         some technical articles on various topics here - `}<Link className="text-purple-800 underline" href="https://medium.com/@jamesowen.dev">medium blog.</Link></p>
                         <br />
                     </div>
 
@@ -58,7 +62,7 @@ const About = () => {
                                         I have used Supabase, the free Firebase alternative, for my backends. Common features I have implemented are 
                                         User Authentication, data fetching, state management, form creation and handling, rendering large quantities of data into tables, 
                                         creating datasets from scratch, advanced SQL queries and DB optimization, protected routes + much more.
-                                        I have interacted with many different JS libraries such as Zustand, Tanstack table, React-form, Nodemailer, Axios, etc.
+                                        I have interacted with many different JS libraries such as Zustand, Tanstack table, React-hook-form, Nodemailer, Axios, etc.
 
                 
                                     </CardContent>
@@ -73,8 +77,10 @@ const About = () => {
                                         <CardTitle className="">Data Engineering</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
-                                        Development of data modeling software using Python, Apache Spark, SQL. Created data pipelines using Databricks Lakehouse and AWS and Azure Cloud services. ETL/ELT, logging and error handling,
-                                        queries and ad-hoc data analysis. Worked using the SDLC, as well as Agile, and managed service requests.
+                                        As a Data Engineer, I used Python and Apache spark to extract, transform and load data. I predominantly used the Databricks Lakehouse platform and the Pyspark
+                                        library for the data transformations and cleaning. I worked with AWS, but more extensively with Azure and tools like Azure Devops, Data Factory and Blob storage.
+                                        I independetly created pipelines and was 
+
                                     </CardContent>
                                     <CardFooter className="text-xs sm:text-sm">
                                         Additional experience: zsh/bash, SQL Server, On prem data processing, data analytics

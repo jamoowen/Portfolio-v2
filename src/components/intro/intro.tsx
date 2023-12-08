@@ -22,7 +22,7 @@ const Intro = () => {
         if (!start) {
             setTimeout(() => {
                 setShowButtons(true)
-            }, 10000);
+            }, 10500);
             setStart(true)
         } else {
             router.refresh()

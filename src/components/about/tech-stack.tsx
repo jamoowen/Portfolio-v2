@@ -62,7 +62,7 @@ const TechStack = () => {
             <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href="https://ecma-international.org/publications-and-standards/standards/ecma-262"><Image width={40} height={40} alt='tech stack' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" /></Link>
             <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href="https://react.dev/"><Image width={40} height={40} alt='tech stack' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /></Link>
             <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href="https://nextjs.org/"><Image width={40} height={40} alt='tech stack' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" /></Link>
-        <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href="https://www.typescriptlang.org/"><Image width={40} height={40} alt='tech stack' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /></Link>
+            <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href="https://www.typescriptlang.org/"><Image width={40} height={40} alt='tech stack' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /></Link>
             
             
 
