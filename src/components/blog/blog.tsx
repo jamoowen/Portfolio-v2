@@ -15,7 +15,9 @@ import { parse } from 'rss-to-json'
 
 
 const Blog = () => {
-    const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40jamesowen.dev";
+    const rssApiKey = process.env.NEXT_PUBLIC_RSS_API_KEY
+    const mediumURL = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40jamesowen.dev&api_key=${rssApiKey}`;
+    // const mediumRssUrl = "https://www.toptal.com/developers/feed2json/convert?url=https://medium.com/feed/@jamesowen.dev"
 
     // types
     interface Profile {
