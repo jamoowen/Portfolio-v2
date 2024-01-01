@@ -106,7 +106,7 @@ const Contact = () => {
                                 <FormItem>
                                     <FormLabel>Email</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="" />
+                                        <Input placeholder="" type="email" {...field}/>
                                     </FormControl>
 
                                     <FormMessage />
@@ -120,7 +120,7 @@ const Contact = () => {
                                 <FormItem>
                                     <FormLabel>Name</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="" />
+                                        <Input placeholder="" type="text" {...field}/>
                                     </FormControl>
 
                                     <FormMessage />
@@ -137,7 +137,7 @@ const Contact = () => {
                                         <Textarea
                                             className="placeholder:text-opacity-10"
                                             placeholder="Hi James! I just had a look through your portfolio, and wanted to reach out..."
-
+                                            {...field}
 
                                         />
                                     </FormControl>
