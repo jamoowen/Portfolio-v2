@@ -25,6 +25,7 @@ import { AxiosError } from 'axios';
 
 import { BsGithub, BsTwitter, BsMedium, BsLinkedin } from 'react-icons/bs'
 import { AiOutlineLoading3Quarters } from 'react-icons/ai'
+import { useRouter } from "next/navigation"
 
 
 
@@ -41,8 +42,7 @@ const formSchema = z.object({
 
 
 const Contact = () => {
-    // const { toast } = useToast()
-
+    const router = useRouter();
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -82,6 +82,9 @@ const Contact = () => {
             })
         } finally {
             setLoading(false);
+            setTimeout(() => {
+                router.refresh();
+            }, 1000);
         }
 
 
