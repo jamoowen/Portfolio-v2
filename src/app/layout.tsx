@@ -42,7 +42,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en"  className={`${fontSans.variable} ${fontMarker.variable} ${fontRaleway.variable} ${font2P.variable} ${fontRubik.variable}`}>
-      <body className={`min-h-screen bg-background font-sans antialiased `}>
+      <body className={`min-h-screen bg-background font-sans antialiased`}>
         <Nav />
         {children}
         <Toaster />

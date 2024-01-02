@@ -48,8 +48,8 @@ const Contact = () => {
         resolver: zodResolver(formSchema),
         defaultValues: {
             email: "",
-            name: "unknown",
-            message: "blank message"
+            name: "",
+            message: ""
         },
     })
 
