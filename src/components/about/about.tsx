@@ -22,12 +22,12 @@ const About = () => {
             <div className="flex items-center justify-center py-10 text-4xl font-bold text-background sm:text-6xl">
                 About me
             </div>
-            <div className="flex justify-between w-full h-full gap-4 mx-auto text-xl sm:text-2xl md:gap-4 bg-opacity-30">
+            <div className="flex justify-between w-full h-full gap-4 mx-auto text-sm sm:text-lg md:gap-4 bg-opacity-30">
 
 
                 <div className='flex flex-col w-full h-full gap-5 '>
-                    <div className="w-8/12 mx-auto">
-                        <p>{`I'm a Web Developer and Entrepreneur, passionate about building apps that are scalable, provide a great UX, and have real utility.`}</p><br/>
+                    <div className="w-10/12 mx-auto">
+                        <p>{`I'm a Web Developer and Entrepreneur, passionate about building apps that are scalable, provide a great UX, and have real utility.`}</p><br />
                         <p>{`I have a background in Data Engineering and have spent a lot of time working with Python, SQL and the Azure cloud.
                             I Studied in South Africa, at the University of the Witwatersrand, and graduated with a Bachelor of Commerce, majoring in Corporate Finance 
                             and Investment.
@@ -39,7 +39,7 @@ const About = () => {
                     </div>
 
                     <div className='relative  w-11/12 mx-auto overflow-hidden h-14 bg-sky-950 bg-opacity-20 rounded-xl'>
-                        
+
                         <div className="absolute px-2 right-full animate-move-xs sm:animate-move-small md:animate-move-medium lg:animate-move-large xl:animate-move-xl rounded-xl ">
                             <TechStack />
                         </div>
@@ -51,20 +51,20 @@ const About = () => {
 
                     <div className="flex flex-col items-center justify-center py-1 bg-opacity-10 border-background">
                         <h2 className="py-10 text-4xl text-background">Core Skills</h2>
-                        <div className="grid grid-cols-1 gap-1 mb-2 ml-1 mr-1 lg:grid-cols-3 auto-rows">
+                        <div className="grid w-10/12 grid-cols-1 gap-1 mb-2 ml-1 mr-1  auto-rows">
                             <Link href="#projects">
-                                <Card className="flex flex-col hover:bg-opacity-50 group h-full relative bg-windows border border-background text-background  justify-start rounded-[4px]">
+                                <Card className="flex flex-col hover:bg-windows group h-full relative bg-white  text-background border-none justify-start  rounded-[1px]">
                                     <CardHeader>
                                         <CardTitle className="">Web Development</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
                                         As a Web Developer, I have experience building applications with Typescript, React and NextJS.
-                                        I have used Supabase, the free Firebase alternative, for my backends. Common features I have implemented are 
-                                        User Authentication, data fetching, state management, form creation and handling, rendering large quantities of data into tables, 
+                                        I have used Supabase, the free Firebase alternative, for my backends. Common features I have implemented are
+                                        User Authentication, data fetching, state management, form creation and handling, rendering large quantities of data into tables,
                                         creating datasets from scratch, advanced SQL queries and DB optimization, protected routes + much more.
                                         I have interacted with many different JS libraries such as Zustand, Tanstack table, React-hook-form, Nodemailer, Axios, etc.
 
-                
+
                                     </CardContent>
                                     <CardFooter className="text-xs sm:text-sm">
                                         Additional experience: Flask, Selenium, Beautiful Soup
@@ -72,14 +72,14 @@ const About = () => {
                                 </Card>
                             </Link>
                             <Link href="#projects">
-                                <Card className="flex flex-col hover:bg-opacity-50 group h-full relative bg-windows text-background border border-background justify-start  rounded-[4px]">
+                                <Card className="flex flex-col hover:bg-windows group h-full relative bg-white  text-background border-none justify-start  rounded-[1px]">
                                     <CardHeader>
                                         <CardTitle className="">Data Engineering</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
                                         As a Data Engineer, I used Python and Apache spark to extract, transform and load data. I predominantly used the Databricks Lakehouse platform and the Pyspark
                                         library for the data transformations and cleaning. I worked with AWS, but more extensively with Azure and tools like Azure Devops, Data Factory and Blob storage.
-                                        I independently created pipelines and was solely responsible for various production deployments. 
+                                        I independently created pipelines and was solely responsible for various production deployments.
 
                                     </CardContent>
                                     <CardFooter className="text-xs sm:text-sm">
@@ -87,14 +87,14 @@ const About = () => {
                                     </CardFooter>
                                 </Card>
                             </Link>
-                     
+
                             <Link href="#blog">
-                                <Card className="flex flex-col hover:bg-opacity-50 group  h-full relative bg-windows text-background border border-background justify-start  rounded-[4px]">
+                                <Card className="flex flex-col hover:bg-windows group h-full relative bg-white  text-background border-none justify-start  rounded-[1px]">
                                     <CardHeader>
                                         <CardTitle className="">Technical Writing</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
-                                         Technical articles on Web3 Protocols and mechanisms, mainly around the Ethereum ecosystem. Topics include Rollups, Restaking, Decentralized Exchanges, Real World Asset Tokenization, Security etc.
+                                        Technical articles on Web3 Protocols and mechanisms, mainly around the Ethereum ecosystem. Topics include Rollups, Restaking, Decentralized Exchanges, Real World Asset Tokenization, Security etc.
                                     </CardContent>
                                     <CardFooter className="text-xs sm:text-sm">
                                         Additional experience: Posts threads of similar content on Twitter
@@ -119,7 +119,7 @@ const About = () => {
 
 export default About
 
-       {/* <Link href="">
+{/* <Link href="">
                                 <Card className="bg-gradient-to-b group flex flex-col h-full relative   rounded-[4px]">
                                     <CardHeader>
                                         <CardTitle className="group-hover:border-b-2 group-hover:border-white">Business Development</CardTitle>

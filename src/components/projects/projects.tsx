@@ -118,6 +118,19 @@ const Projects = () => {
                         bgColor="border-4 border-teal-400 bg-background "
                     />
                     <ProjectCard
+                        githubRepo="https://github.com/jamoowen/Movie-Searcher"
+                        imageUrl = "/images/clubstamps.png"
+                        projectName="Club Stamps"
+                        projectUrl="https://clubstamps.vercel.app/"
+                        projectDescription="Website made for freelance client"
+
+                        projectFeatures="Website created for a client, using Typescript, NextJS, utilizing Sanity CMS. Used ShadcnUI
+                        as well as raw RadixUI primitives for certain components. React-hook-form + zod used for forms. 
+                        React-multi-carousel used to create carousel on homepage."
+                        technologies={['typescript', 'nextjs', 'react', 'sanity', 'zod', 'node' ]}
+                        bgColor="border-4 border-red-600 bg-background "
+                    />
+                    <ProjectCard
                         githubRepo="https://github.com/jamoowen/restaurant-resolver"
                         imageUrl = "/images/restaurant.png"
                         projectName="Restaurant Resolver"

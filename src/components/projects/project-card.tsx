@@ -28,7 +28,8 @@ const iconMap = {
     "axios": "https://api.iconify.design/logos/axios.svg",
     "zustand": "https://github.com/pmndrs/zustand/blob/main/examples/demo/public/logo192.png?raw=true",
     "redis": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
-    "nextauth": "https://next-auth.js.org/img/logo/logo-sm.png"
+    "nextauth": "https://next-auth.js.org/img/logo/logo-sm.png",
+    "sanity": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Sanity-logo-svg.svg",
 }
 
 
