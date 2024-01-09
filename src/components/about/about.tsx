@@ -80,7 +80,7 @@ const About = () => {
                                     As a Data Engineer, I built robust data pipelines using predominantly Python and Apache Spark. I worked extensively on the Databricks platform and used both
                                     AWS and Azure Cloud services. I interacted with tools like Data Factory, Azure Functions, AWS Lambda, S3, Blob Storage, etc. I am familiar with SQL server, PostgresSQL and
                                     often had to refactor old SQL server code to Pyspark or Databricks SQL. As well as Data Engineering responsibilities, I worked on product development of 
-                                    Sagacity Solutions' Value Based Management model and was responsible for many features in the 2023 Wave4 release.
+                                    Sagacity Solutions&apos; Value Based Management model and was responsible for many features in the 2023 Wave4 release.
                 
                                     </CardContent>
                                     <CardFooter className="text-xs sm:text-sm">
