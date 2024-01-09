@@ -27,14 +27,14 @@ const About = () => {
 
                 <div className='flex flex-col w-full h-full gap-5 '>
                     <div className="w-10/12 mx-auto">
-                        <p>{`I'm a Web Developer and Entrepreneur, passionate about building apps that are scalable, provide a great UX, and have real utility.`}</p><br />
-                        <p>{`I have a background in Data Engineering and have spent a lot of time working with Python, SQL and the Azure cloud.
+                        <p>{`I'm a Software Developer and Entrepreneur, passionate about building apps that are scalable, provide a great UX, and have real utility.`}</p><br />
+                        <p>{`I have a background in Data Engineering and have spent a lot of time working with Python, SQL , Databricks and Spark.
                             I Studied in South Africa, at the University of the Witwatersrand, and graduated with a Bachelor of Commerce, majoring in Corporate Finance 
                             and Investment.
                         `}</p>
                         <br></br>
                         <p>{`Additionally, I am a big proponent of decentralization and Web3, and have written 
-                         some technical articles on various topics here - `}<Link className="text-purple-800 underline" href="https://medium.com/@jamesowen.dev">medium blog.</Link></p>
+                         some technical articles on various topics here - `}<Link className="text-purple-800 underline" href="https://medium.com/@jamesowen.dev">Medium blog.</Link></p>
                         <br />
                     </div>
 
@@ -59,7 +59,7 @@ const About = () => {
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
                                         As a Web Developer, I have experience building applications with Typescript, React and NextJS.
-                                        I have used Supabase, the free Firebase alternative, for my backends. Common features I have implemented are
+                                        I have used Supabase, for my backend services and Sanity as a headless CMS. Common features I have implemented are
                                         User Authentication, data fetching, state management, form creation and handling, rendering large quantities of data into tables,
                                         creating datasets from scratch, advanced SQL queries and DB optimization, protected routes + much more.
                                         I have interacted with many different JS libraries such as Zustand, Tanstack table, React-hook-form, Nodemailer, Axios, etc.
@@ -77,10 +77,11 @@ const About = () => {
                                         <CardTitle className="">Data Engineering</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
-                                        As a Data Engineer, I used Python and Apache spark to extract, transform and load data. I predominantly used the Databricks Lakehouse platform and the Pyspark
-                                        library for the data transformations and cleaning. I worked with AWS, but more extensively with Azure and tools like Azure Devops, Data Factory and Blob storage.
-                                        I independently created pipelines and was solely responsible for various production deployments.
-
+                                    As a Data Engineer, I built robust data pipelines using predominantly Python and Apache Spark. I worked extensively on the Databricks platform and used both
+                                    AWS and Azure Cloud services. I interacted with tools like Data Factory, Azure Functions, AWS Lambda, S3, Blob Storage, etc. I am familiar with SQL server, PostgresSQL and
+                                    often had to refactor old SQL server code to Pyspark or Databricks SQL. As well as Data Engineering responsibilities, I worked on product development of 
+                                    Sagacity Solutions' Value Based Management model and was responsible for many features in the 2023 Wave4 release.
+                
                                     </CardContent>
                                     <CardFooter className="text-xs sm:text-sm">
                                         Additional experience: zsh/bash, SQL Server, On prem data processing, data analytics
@@ -94,7 +95,7 @@ const About = () => {
                                         <CardTitle className="">Technical Writing</CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-grow text-sm sm:text-lg">
-                                        Technical articles on Web3 Protocols and mechanisms, mainly around the Ethereum ecosystem. Topics include Rollups, Restaking, Decentralized Exchanges, Real World Asset Tokenization, Security etc.
+                                        I write technical articles on Web3 Protocols and mechanisms, mainly around the Ethereum ecosystem. Topics include Rollups, Restaking, Decentralized Exchanges, Real World Asset Tokenization, Security etc.
                                     </CardContent>
                                     <CardFooter className="text-xs sm:text-sm">
                                         Additional experience: Posts threads of similar content on Twitter

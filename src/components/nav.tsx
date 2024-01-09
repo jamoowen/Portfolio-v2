@@ -67,16 +67,17 @@ const Nav = () => {
                 </NavigationMenuList>
             </NavigationMenu>
             <div className="flex flex-row items-center gap-5 text-xl shrink-0">
-                <Link target="_blank" href="https://github.com/jamoowen">
+                <Link target="_blank" href="https://github.com/jamoowen" className="hover:text-windows">
+                    
                     <BsGithub />
                 </Link>
-                <Link target="_blank" href="https://twitter.com/jmsowen24">
+                <Link target="_blank" href="https://twitter.com/jmsowen24" className="hover:text-windows">
                     <BsTwitter />
                 </Link>
-                <Link target="_blank" href="https://medium.com/@jamesowen.dev">
+                <Link target="_blank" href="https://medium.com/@jamesowen.dev" className="hover:text-windows">
                     <BsMedium />
                 </Link>
-                <Link target="_blank" href="https://www.linkedin.com/in/jamesowen24/">
+                <Link target="_blank" href="https://www.linkedin.com/in/jamesowen24/" className="hover:text-windows">
                     <BsLinkedin />
                 </Link>
             </div>

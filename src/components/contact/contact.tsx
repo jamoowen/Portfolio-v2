@@ -150,7 +150,7 @@ const Contact = () => {
                             )}
                         />
 
-                        <Button className="bg-windows mt-2 font-bold w-24 font-raleway rounded-[4px] " type="submit">
+                        <Button className="bg-windows mt-4 font-bold w-24 font-raleway rounded-[2px] " type="submit">
                             {loading ? <p className="animate-spin"><AiOutlineLoading3Quarters /></p>
                                 : <p>Send</p>}
                         </Button>
@@ -160,16 +160,16 @@ const Contact = () => {
 
 
                 <div className="flex flex-row gap-5 w-8/12 text-4xl border-2 border-windows p-4 rounded-[4px]  justify-around mt-10">
-                    <Link target='_blank' href="https://github.com/jamoowen">
+                    <Link target='_blank' href="https://github.com/jamoowen" className="hover:text-windows">
                         <BsGithub />
                     </Link>
-                    <Link target='_blank' href="https://twitter.com/jmsowen24">
+                    <Link target='_blank' href="https://twitter.com/jmsowen24" className="hover:text-windows">
                         <BsTwitter />
                     </Link>
-                    <Link target='_blank' href="https://medium.com/@jamesowen.dev">
+                    <Link target='_blank' href="https://medium.com/@jamesowen.dev" className="hover:text-windows">
                         <BsMedium />
                     </Link>
-                    <Link target='_blank' href="https://www.linkedin.com/in/jamesowen24/">
+                    <Link target='_blank' href="https://www.linkedin.com/in/jamesowen24/" className="hover:text-windows">
                         <BsLinkedin />
                     </Link>
 

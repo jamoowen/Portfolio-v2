@@ -130,7 +130,7 @@ const Blog = () => {
 
                 <div className="grid grid-cols-3 gap-1 mb-4 sm:gap-4 sm:px-2">
                     <div className="col-span-3 sm:col-start-2 sm:col-span-2">
-                        <h2 className="p-4 sm:p-2">All of my medium articles are available on my Medium page: <Link className="text-purple-600 underline" href="https://medium.com/@jamesowen.dev">@jamesowen.dev</Link></h2>
+                        <h2 className="p-4 sm:p-2  ml-2">All of my medium articles are available on my Medium page: <Link className="text-purple-600 underline" href="https://medium.com/@jamesowen.dev">@jamesowen.dev</Link></h2>
                     </div>
                     <div className="col-span-1 flex p-4 flex-col bg-windows border-2 ml-2">
                     <h4 className="mb-4 font-bold leading-none text-md">Articles</h4>
