@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { Toaster } from "@/components/ui/toaster"
+import { Analytics } from '@vercel/analytics/react';
+
 
 import { Inter as FontSans, Permanent_Marker as Marker, Raleway,Rubik ,Press_Start_2P, Rubik_Glitch } from "next/font/google"
 import Nav from '../components/nav'
@@ -45,6 +47,7 @@ export default function RootLayout({
       <body className={`min-h-screen bg-background font-sans antialiased`}>
         <Nav />
         {children}
+        <Analytics />
         <Toaster />
         </body>
 
