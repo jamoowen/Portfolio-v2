@@ -19,14 +19,14 @@ const About = () => {
 
 
         <div id="about" className='w-full h-full min-h-screen overflow-visible bg-white font-raleway text-zinc-700'>
-            <div className="flex items-center justify-center py-10 text-4xl font-bold text-background sm:text-6xl">
+            <div className="flex items-center justify-center py-10 text-4xl font-semibold text-background sm:text-5xl">
                 About me
             </div>
             <div className="flex justify-between w-full h-full gap-4 mx-auto text-sm sm:text-lg md:gap-4 bg-opacity-30">
 
 
                 <div className='flex flex-col w-full h-full gap-5 '>
-                    <div className="w-10/12 mx-auto">
+                    <div className="w-10/12 mx-auto space-y-1.5 px-6">
                         <p>{`I'm a Software Developer and Entrepreneur, passionate about building apps that are scalable, provide a great UX, and have real utility.`}</p><br />
                         <p>{`I have a background in Data Engineering and have spent a lot of time working with Python, SQL , Databricks and Spark.
                             I Studied in South Africa, at the University of the Witwatersrand, and graduated with a Bachelor of Commerce, majoring in Corporate Finance 
@@ -50,7 +50,7 @@ const About = () => {
                     </div>
 
                     <div className="flex flex-col items-center justify-center py-1 bg-opacity-10 border-background">
-                        <h2 className="py-10 text-4xl text-background">Core Skills</h2>
+                        <h2 className="py-10 text-4xl  text-background">Core Skills</h2>
                         <div className="grid w-10/12 grid-cols-1 gap-1 mb-2 ml-1 mr-1  auto-rows">
                             <Link href="#projects">
                                 <Card className="flex flex-col hover:bg-windows group h-full relative bg-white  text-background border-none justify-start  rounded-[1px]">

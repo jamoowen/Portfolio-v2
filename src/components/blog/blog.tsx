@@ -120,7 +120,7 @@ const Blog = () => {
 
     return (
         <div id="blog" className='w-full h-full min-h-screen overflow-visible bg-white font-raleway text-background border-y border-windows'>
-            <div className="flex items-center justify-center py-10 text-4xl font-bold text-opacity-70 sm:text-6xl">
+            <div className="flex items-center justify-center py-10 text-4xl font-semibold text-opacity-70 sm:text-5xl">
                 Blog
             </div>
             
@@ -132,9 +132,9 @@ const Blog = () => {
                     <div className="col-span-3 sm:col-start-2 sm:col-span-2">
                         <h2 className="p-4 sm:p-2  ml-2">All of my medium articles are available on my Medium page: <Link className="text-purple-600 underline" href="https://medium.com/@jamesowen.dev">@jamesowen.dev</Link></h2>
                     </div>
-                    <div className="col-span-1 flex p-4 flex-col bg-windows border-2 ml-2">
+                    <div className="col-span-1 flex p-4 flex-col h-96 bg-windows border-2 ml-2">
                     <h4 className="mb-4 font-bold leading-none text-md">Articles</h4>
-                        <ScrollArea className="flex  rounded-[3px] bg-windows h-full shrink border-background">
+                        <ScrollArea className="flex  rounded-[3px] h-full shrink border-background">
                             <div className="">
 
                                 

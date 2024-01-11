@@ -96,7 +96,7 @@ const Contact = () => {
 
 
         <div id="contact" className='w-full h-full min-h-screen overflow-visible text-white font-raleway bg-background'>
-            <div className="flex items-center justify-center py-10 text-4xl font-bold text-opacity-70 sm:text-6xl">
+            <div className="flex items-center justify-center py-10 text-4xl font-semibold text-opacity-70 sm:text-5xl">
                 Contact Me
             </div>
             <div className="flex flex-col items-center justify-between w-full h-full gap-4 mx-auto text-xl font-bold sm:text-2xl md:gap-4 bg-opacity-30">

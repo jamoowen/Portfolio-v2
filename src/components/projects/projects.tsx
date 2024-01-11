@@ -46,7 +46,7 @@ const Projects = () => {
 
 
         <div id="projects" className='w-full h-full min-h-screen overflow-visible text-white bg-background'>
-            <div className="flex items-center justify-center py-10 text-4xl font-bold font-raleway text-opacity-70 sm:text-6xl">
+            <div className="flex items-center justify-center py-10 text-4xl font-semibold font-raleway text-opacity-70 sm:text-5xl">
                 Projects
             </div>
             <div className="items-center justify-center w-full h-full mx-auto">
