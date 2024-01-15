@@ -27,7 +27,9 @@ const About = () => {
 
                 <div className='flex flex-col w-full h-full gap-5 '>
                     <div className="w-10/12 mx-auto space-y-1.5 px-6">
-                        <p>{`I'm a Software Developer and Entrepreneur, passionate about building apps that are scalable, provide a great UX, and have real utility.`}</p><br />
+                        <p>{`I'm a Software Developer and Entrepreneur, passionate about building apps that are scalable, provide a great UX, and have real utility.
+                        I love web development and working with Typescript and React. I am interested in both Frontend and Backend development and love learning new 
+                        languages, frameworks and technologies.`}</p><br />
                         <p>{`I have a background in Data Engineering and have spent a lot of time working with Python, SQL , Databricks and Spark.
                             I Studied in South Africa, at the University of the Witwatersrand, and graduated with a Bachelor of Commerce, majoring in Corporate Finance 
                             and Investment.

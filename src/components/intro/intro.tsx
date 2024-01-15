@@ -81,7 +81,7 @@ const Intro = () => {
                                         3000, // Waits 1s
                                         "I'm a developer!",
                                         700,
-                                        "I'm a Web Developer, Entrepreneur, and amateur boxer!",
+                                        "I'm a Web Developer, Entrepreneur, and Amateur Boxer!",
                                    
                                         () => {
                                         },
