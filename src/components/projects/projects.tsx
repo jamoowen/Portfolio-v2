@@ -118,10 +118,23 @@ const Projects = () => {
                         bgColor="border-4 border-teal-400 bg-background "
                     />
                     <ProjectCard
-                        githubRepo="https://github.com/jamoowen/Movie-Searcher"
+                        githubRepo="https://github.com/jamoowen/coin-dashboard"
+                        imageUrl = "/images/coin-dashboard.png"
+                        projectName="Coin Dashboard"
+                        projectUrl="https://coin-dashboard-iota.vercel.app/"
+                        projectDescription="Coin dashboard and live pricing"
+
+                        projectFeatures="This app pulls live coin data from the coinbase api and displays in an interactive dashboard. 
+                        A websocket connection pulls the latest ticker information.
+                        This app was made using NextJs, Typescript, Highcharts stock, Axios, Vitest, ShadcnUi, HeadlessUI, Lucide."
+                        technologies={['typescript', 'nextjs', 'react', 'highcharts', 'jest', 'axios' ]}
+                        bgColor="border-4 border-orange-600 bg-background "
+                    />
+                    <ProjectCard
+                        githubRepo="https://github.com/jamoowen/club-stampz"
                         imageUrl = "/images/clubstamps.png"
                         projectName="Club Stamps"
-                        projectUrl="https://clubstamps.vercel.app/"
+                        projectUrl="https://www.clubstamps.co.uk//"
                         projectDescription="Website made for freelance client"
 
                         projectFeatures="Website created for a client, using Typescript, NextJS, utilizing Sanity CMS. Used ShadcnUI

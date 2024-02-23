@@ -30,6 +30,8 @@ const iconMap = {
     "redis": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
     "nextauth": "https://next-auth.js.org/img/logo/logo-sm.png",
     "sanity": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Sanity-logo-svg.svg",
+    "highcharts": "https://cdn.worldvectorlogo.com/logos/highcharts-1.svg",
+    "jest": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg"
 }
 
 

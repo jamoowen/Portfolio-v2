@@ -130,7 +130,7 @@ const Blog = () => {
 
                 <div className="grid grid-cols-3 gap-1 mb-4 sm:gap-4 sm:px-2">
                     <div className="col-span-3 sm:col-start-2 sm:col-span-2">
-                        <h2 className="p-4 sm:p-2  ml-2">All of my medium articles are available on my Medium page: <Link className="text-purple-600 underline" href="https://medium.com/@jamesowen.dev">@jamesowen.dev</Link></h2>
+                        <h2 className="p-4 sm:p-2  ml-2">All of my medium articles are available on my Medium page: <Link className="text-indigo-600 underline" href="https://medium.com/@jamesowen.dev">@jamesowen.dev</Link></h2>
                     </div>
                     <div className="col-span-1 flex p-4 flex-col h-96 bg-windows border-2 ml-2">
                     <h4 className="mb-4 font-bold leading-none text-md">Articles</h4>
@@ -155,8 +155,8 @@ const Blog = () => {
 
                         {blog.item[0] ?
                             <div className="p-2 mb-10  border-background rounded-[3px]">
-                                <h2 className="ml-2 font-bold text-background  border-windows text-md sm:text:lg">{blog.item[articleIndex].title}</h2>
-                                <Link href={blog.item[articleIndex].link} target='_blank'>
+                                <Link href={blog.item[articleIndex].link} className="text-background hover:text-indigo-600" target='_blank'>
+                                <h2 className="ml-2 font-bold  border-windows text-md sm:text:lg">{blog.item[articleIndex].title}</h2>
                                     {/* <div className="w-full bg-center bg-no-repeat h-52 sm:h-72" style={{ backgroundImage: `url(${blog.item[articleIndex].thumbnail})` }}>
                                     </div> */}
                                     <Image

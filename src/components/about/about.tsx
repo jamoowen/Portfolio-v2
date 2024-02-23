@@ -62,7 +62,7 @@ const About = () => {
                                     <CardContent className="flex-grow text-sm sm:text-lg">
                                         As a Web Developer, I have experience building applications with Typescript, React and NextJS.
                                         I have used Supabase, for my backend services and Sanity as a headless CMS. Common features I have implemented are
-                                        User Authentication, data fetching, state management, form creation and handling, rendering large quantities of data into tables,
+                                        User Authentication, unit testing with Jest, data fetching, state management, form creation and handling, rendering large quantities of data into tables,
                                         creating datasets from scratch, advanced SQL queries and DB optimization, protected routes + much more.
                                         I have interacted with many different JS libraries such as Zustand, Tanstack table, React-hook-form, Nodemailer, Axios, etc.
 
