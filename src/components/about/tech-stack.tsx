@@ -51,7 +51,7 @@ const TechStack = () => {
             <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href=''><Image width={40} height={40} alt='tech stack' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /></Link>
             <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href=''><Image width={40} height={40} alt='tech stack' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" /></Link>
             <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href="https://www.postgresql.org/"><Image width={40} height={40} alt='tech stack' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" /></Link>
-            <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href="https://tailwindcss.com/"><Image width={40} height={40} alt='tech stack' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" /></Link>
+            <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href="https://tailwindcss.com/"><Image width={40} height={40} alt='tech stack' src="https://github.com/devicons/devicon/tree/v2.16.0/icons/tailwindcss/tailwindcss-plain.svg" /></Link>
             <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href="https://soliditylang.org/"><Image width={40} height={40} alt='tech stack' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" /></Link>
             <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href="https://supabase.com/"><Image width={40} height={40} alt='tech stack' src="https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg" /></Link>
             <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href="https://sanity.io"><Image width={40} height={40} alt='tech stack' src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Sanity-logo-svg.svg" /></Link>
@@ -67,7 +67,7 @@ const TechStack = () => {
             <Link className='hover:outline rounded-[4px] hover:outline-sky-950' target='_blank' href="https://www.typescriptlang.org/"><Image width={40} height={40} alt='tech stack' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /></Link>
             
             
-
+            
         </div>
     )
 }

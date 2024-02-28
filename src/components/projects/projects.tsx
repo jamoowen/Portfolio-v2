@@ -134,7 +134,7 @@ const Projects = () => {
                         githubRepo="https://github.com/jamoowen/club-stampz"
                         imageUrl = "/images/clubstamps.png"
                         projectName="Club Stamps"
-                        projectUrl="https://www.clubstamps.co.uk//"
+                        projectUrl="https://www.clubstamps.co.uk/"
                         projectDescription="Website made for freelance client"
 
                         projectFeatures="Website created for a client, using Typescript, NextJS, utilizing Sanity CMS. Used ShadcnUI
