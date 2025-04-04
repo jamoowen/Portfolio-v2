@@ -15,9 +15,9 @@ const Intro = () => {
                 {/* Main introduction */}
                 <div className="space-y-6 text-zinc-300">
                     <p className="text-3xl font-bold text-zinc-200 sm:text-4xl">
-                        I'm James.                     </p>
+                        I&apos;m James.                     </p>
                     <p className="text-3xl font-bold text-zinc-200 sm:text-4xl">
-                        I'm a Backend Engineer, Amateur Boxer, and a life long learner.
+                        I&apos;m a Backend Engineer, Amateur Boxer, and a life long learner.
                     </p>
 
 

@@ -70,7 +70,7 @@ const Contact = () => {
 
             toast({
                 title: "Email sent!",
-                description: "I'll respond to you as soon as possible!",
+                description: "I&apos;ll respond to you as soon as possible!",
             })
         } catch (error) {
             const axiosError = error as AxiosError;
