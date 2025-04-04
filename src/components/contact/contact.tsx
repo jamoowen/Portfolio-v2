@@ -95,7 +95,7 @@ const Contact = () => {
     return (
 
 
-        <div id="contact" className='w-full h-full min-h-screen overflow-visible text-white font-raleway bg-background'>
+        <div id="contact" className='w-full h-full min-h-screen overflow-visible text-white  bg-background'>
             <div className="flex items-center justify-center py-10 text-4xl font-semibold text-opacity-70 sm:text-5xl">
                 Contact Me
             </div>
@@ -150,7 +150,7 @@ const Contact = () => {
                             )}
                         />
 
-                        <Button className="bg-windows mt-4 font-bold w-24 font-raleway rounded-[2px] " type="submit">
+                        <Button className="bg-windows mt-4 font-bold w-24  rounded-[2px] " type="submit">
                             {loading ? <p className="animate-spin"><AiOutlineLoading3Quarters /></p>
                                 : <p>Send</p>}
                         </Button>

@@ -21,7 +21,7 @@ module.exports = {
     extend: {
       
       fontFamily: {
-        'sans': ["var(--font-sans)", ...fontFamily.sans],
+        'serif': ["var(--font-serif)", "Georgia", "Cambria", "Times New Roman", "Times", "serif"],
         'marker': ["var(--font-marker)"],
         'raleway': ["var(--font-raleway)"],
         '2p': ["var(--font-2p)"],

@@ -1,16 +1,18 @@
 import type { Metadata } from 'next'
+
 import './globals.css'
 import { Toaster } from "@/components/ui/toaster"
 import { Analytics } from '@vercel/analytics/react';
 
-
-import { Inter as FontSans, Permanent_Marker as Marker, Raleway,Rubik ,Press_Start_2P, Rubik_Glitch } from "next/font/google"
+import { Merriweather, Permanent_Marker as Marker, Raleway, Rubik, Press_Start_2P } from "next/font/google"
 import Nav from '../components/nav'
 
-export const fontSans = FontSans({
+export const fontSerif = Merriweather({
+  weight: ["300", "400", "700", "900"],
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: '--font-serif',
 })
+
 export const fontMarker = Marker({
   weight: ["400"],
   subsets: ["latin"],
@@ -31,7 +33,6 @@ export const fontRubik = Rubik({
   variable: "--font-rubik",
 })
 
-
 export const metadata: Metadata = {
   title: 'James Owen',
   description: 'Software Developer',
@@ -43,14 +44,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en"  className={`${fontSans.variable} ${fontMarker.variable} ${fontRaleway.variable} ${font2P.variable} ${fontRubik.variable}`}>
-      <body className={`min-h-screen bg-background font-sans antialiased`}>
+    <html lang="en" className={`${fontSerif.variable} ${fontMarker.variable} ${fontRaleway.variable} ${font2P.variable} ${fontRubik.variable}`}>
+      <body className={`min-h-screen bg-background font-serif antialiased`}>
         <Nav />
         {children}
         <Analytics />
         <Toaster />
-        </body>
-
+      </body>
     </html>
   )
 }

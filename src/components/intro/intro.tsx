@@ -1,144 +1,67 @@
 'use client'
-import { TypeAnimation } from 'react-type-animation';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import SectionButtons from '../section-buttons';
-import { FaHandPointLeft } from "react-icons/fa";
-
 
 const Intro = () => {
-    const router = useRouter();
-
-    const [start, setStart] = useState(false)
-    const [rep, setRep] = useState(0)
-    const [showButtons, setShowButtons] = useState(false)
-
-
-
-
-    const handleClick = () => {
-      
-        if (!start) {
-            setTimeout(() => {
-                setShowButtons(true)
-            }, 10600);
-            setStart(true)
-        } else {
-            router.refresh()
-        }
- 
-    }
-
     return (
-        <div className='relative w-full min-h-screen '>
-
-            <div className="flex items-center justify-center py-10 text-4xl font-black font-raleway md:mt-10 md:mb-10 text-zinc-400 text-opacity-70 sm:text-6xl">
+        <div className='relative w-full min-h-screen'>
+            <div className="flex items-center justify-center py-10 text-4xl font-bold md:mt-10 md:mb-10 text-zinc-400 text-opacity-70 sm:text-6xl">
                 James Owen
             </div>
 
-            <div className="relative grid items-start w-full h-screen grid-cols-6 gap-4 px-2 overflow-hidden text-xl font-bold bg-opacity-10 sm:text-3xl md:gap-4 font-rubik">
+            <div className="relative grid items-start w-full h-screen grid-cols-1 gap-4 px-4 overflow-hidden text-xl bg-opacity-10 sm:text-2xl md:gap-4 md:px-16 lg:px-32">
+                {/* Main introduction */}
+                <div className="space-y-6 text-zinc-300">
+                    <p className="text-3xl font-bold text-zinc-200 sm:text-4xl">
+                        I'm James.                     </p>
+                    <p className="text-3xl font-bold text-zinc-200 sm:text-4xl">
+                        I'm a Backend Engineer, Amateur Boxer, and a life long learner.
+                    </p>
 
-                <div onClick={handleClick} className='absolute top-0 h-32 col-start-1 col-end-2 px-2 w-14 md:w-24 animate-bounce-temporary text-background '>
-                    -                <br />.<br />.
-                    <Image
 
-                        src="/images/windows-start-xs.png"
-                        alt='windows start button'
-                        fill
-                        className={`cursor-pointer z-20 max-h-14 w-full md:w-min object-contain mb-3 text-2xl font-semibold`}
+                    <p className="text-xl font-normal">
+                        I love building scalable, distributed systems and APIs that power modern applications.
+                        I am currently working at Tribally Studios, where I build across the tribally stack. Primarily building microservices with  Node.j, Kafka, Postgres, etc.
+                    </p>
 
-                    />
-                </div>
-
-                <div className='col-span-5 col-start-2 mt-3 sm:mt-1'>
-                    {start ?
-                        <>
-                            <div className='gap-2 px-5 '>
-                                <TypeAnimation
-                                    className='items-start '
-                                    sequence={[
-                                        300,
-                                        "Hi",
-                                        1000, // Waits 1s
-                                        "Hi, I'm James 👋",
-
-                                        () => {
-                                        },
-                                    ]}
-                                    style={{
-                                        display: 'inline-block',
-                                    }}
-
-                                    wrapper="span"
-                                    cursor={false}
-                                    repeat={rep}
-
-                                />
-                                <TypeAnimation
-                                    sequence={[
-
-                                        3000, // Waits 1s
-                                        "I'm a developer!",
-                                        700,
-                                        "I'm a Web Developer, Entrepreneur, and Amateur Boxer!",
-                                   
-                                        () => {
-                                        },
-                                    ]}
-                                    style={{
-                                        display: 'block',
-                                    }}
-
-                                    wrapper="span"
-                                    cursor={false}
-                                    repeat={rep}
-
-                                />
-                                <TypeAnimation
-                                    sequence={[
-
-                                        9300, // Waits 1s
-                                        "Welcome to my portfolio.",
-
-                                        () => {
-                                        },
-                                    ]}
-                                    style={{
-                                        display: 'block',
-                                    }}
-
-                                    wrapper="span"
-                                    cursor={false}
-                                    repeat={rep}
-
-                                />
+                    {/* Tech Stack Section */}
+                    <div className="pt-6">
+                        <h3 className="mb-4 text-2xl text-zinc-200">Technical Experience</h3>
+                        <div className="grid grid-cols-2 gap-4 text-base md:grid-cols-3 lg:grid-cols-4">
+                            <div className="p-3 rounded-lg bg-zinc-800/50">
+                                <span className="text-emerald-400">Languages</span>
+                                <p className="text-sm font-normal">TypeScript, Go, Python, JavaScript</p>
                             </div>
-                        </>
-                        : <div className='flex flex-row gap-2 mt-2 cursor-default text-windows '> <p className='animate-bounce-left'><FaHandPointLeft/></p> Click here </div>
-                    }
-
-                </div>
-                <div className='h-auto col-span-4 col-start-2 px-5 mb-56'>
-                    {
-                        showButtons &&
-                        <div className='z-10 min-h-full '>
-                            <SectionButtons />
+                            <div className="p-3 rounded-lg bg-zinc-800/50">
+                                <span className="text-blue-400">Web Development</span>
+                                <p className="text-sm font-normal">NodeJS, React, NextJS, ExpressJS, KoaJS, JWT auth, REST API, RTK Query</p>
+                            </div>
+                            <div className="p-3 rounded-lg bg-zinc-800/50">
+                                <span className="text-purple-400">Data & Storage</span>
+                                <p className="text-sm font-normal">Postgres, MongoDB, Redis, Apache Kafka, BigQuery</p>
+                            </div>
+                            <div className="p-3 rounded-lg bg-zinc-800/50">
+                                <span className="text-yellow-400">Cloud & Infrastructure</span>
+                                <p className="text-sm font-normal">GCP, Kubernetes, Docker, Cloud Run, Cloud Functions</p>
+                            </div>
+                            <div className="p-3 rounded-lg bg-zinc-800/50">
+                                <span className="text-red-400">Testing & Tools</span>
+                                <p className="text-sm font-normal">Jest, Git, Github Actions, Agile, MacOS, Ubuntu Server</p>
+                            </div>
+                            <div className="p-3 rounded-lg bg-zinc-800/50">
+                                <span className="text-indigo-400">Other</span>
+                                <p className="text-sm font-normal">Smart Contract development, Puppeteer, Selenium</p>
+                            </div>
                         </div>
-                    }
-
+                    </div>
                 </div>
-
             </div>
 
-            <Image className='object-none w-full opacity-50 mt-72 -z-10 grayscale ' fill src='/images/mountains-better-1.png' alt='background mountains' />
+            <Image className='object-none w-full opacity-50 mt-72 -z-10 grayscale' fill src='/images/mountains-better-1.png' alt='background mountains' />
         </div>
-
-
-
-
-
-
     )
 }
+
 export default Intro
