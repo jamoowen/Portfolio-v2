@@ -23,7 +23,7 @@ const Intro = () => {
 
                     <p className="text-xl font-normal">
                         I love building scalable, distributed systems and APIs that power modern applications.
-                        I am currently working at Tribally Studios, where I build across the tribally stack. Primarily building microservices with  Node.j, Kafka, Postgres, etc.
+                        I am currently working at Tribally Studios, where I build across the tribally stack. Primarily building microservices with  NodeJS, Kafka, Postgres, etc.
                     </p>
 
                     {/* Tech Stack Section */}
