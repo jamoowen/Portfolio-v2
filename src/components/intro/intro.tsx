@@ -19,11 +19,11 @@ const Intro = () => {
                     <p className="text-3xl font-bold text-zinc-200 sm:text-4xl">
                         I&apos;m a Backend Engineer, Amateur Boxer, and a life long learner.
                     </p>
-
-
                     <p className="text-xl font-normal">
-                        I love building scalable, distributed systems and APIs that power modern applications.
-                        I am currently working at Tribally Studios, where I build across the tribally stack. Primarily building microservices with  NodeJS, Kafka, Postgres, etc.
+                        I&apos;m a Backend leaning Engineer with a wealth of experience building scalable backends with Node and sometimes Go. I can work across the stack if needed and even have some experience with Smart Contract as well as Data Engineering.
+                    </p>
+                    <p className="text-xl font-normal">
+                        When I&apos;m not coding, I&apos;m  challenging myself in other ways: either in the boxing ring, or tackling a new language, or even sometimes in an intense 1v1 on Rust (those who know, know). Overcoming tough challenges and levelling up my skills in life are what drive me daily.
                     </p>
 
                     {/* Tech Stack Section */}
@@ -32,11 +32,11 @@ const Intro = () => {
                         <div className="grid grid-cols-2 gap-4 text-base md:grid-cols-3 lg:grid-cols-4">
                             <div className="p-3 rounded-lg bg-zinc-800/50">
                                 <span className="text-emerald-400">Languages</span>
-                                <p className="text-sm font-normal">TypeScript, Go, Python, JavaScript</p>
+                                <p className="text-sm font-normal">TypeScript, Go, JavaScript</p>
                             </div>
                             <div className="p-3 rounded-lg bg-zinc-800/50">
                                 <span className="text-blue-400">Web Development</span>
-                                <p className="text-sm font-normal">NodeJS, React, NextJS, ExpressJS, KoaJS, JWT auth, REST API, RTK Query</p>
+                                <p className="text-sm font-normal">NodeJS, NestJS, React, NextJS, KoaJS, JWT auth, REST API, RTK Query</p>
                             </div>
                             <div className="p-3 rounded-lg bg-zinc-800/50">
                                 <span className="text-purple-400">Data & Storage</span>
@@ -44,15 +44,15 @@ const Intro = () => {
                             </div>
                             <div className="p-3 rounded-lg bg-zinc-800/50">
                                 <span className="text-yellow-400">Cloud & Infrastructure</span>
-                                <p className="text-sm font-normal">GCP, Kubernetes, Docker, Cloud Run, Cloud Functions</p>
+                                <p className="text-sm font-normal">AWS, GCP, Kubernetes, Docker</p>
                             </div>
                             <div className="p-3 rounded-lg bg-zinc-800/50">
-                                <span className="text-red-400">Testing & Tools</span>
+                                <span className="text-red-400">Testing & Tooling</span>
                                 <p className="text-sm font-normal">Jest, Git, Github Actions, Agile, MacOS, Ubuntu Server</p>
                             </div>
                             <div className="p-3 rounded-lg bg-zinc-800/50">
                                 <span className="text-indigo-400">Other</span>
-                                <p className="text-sm font-normal">Smart Contract development, Puppeteer, Selenium</p>
+                                <p className="text-sm font-normal">Smart Contract development, Data Engineering</p>
                             </div>
                         </div>
                     </div>
