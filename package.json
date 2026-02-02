@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "A simple portfolio website.",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "vercel dev --prod"
     "build:css": "tailwindcss -i src/style.css -o public/style.css",
     "watch:css": "tailwindcss -i src/style.css -o public/style.css --watch",
     "build": "npm install && npm run build:css",
