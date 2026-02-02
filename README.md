@@ -1,4 +1,5 @@
-# Simple Portfolio
+[james-owen.xyz](https://james-owen.xyz)
+
 To start the server in development mode (with live-reloading for `index.html` and automatic Tailwind CSS recompilation), run:
 
 ```bash
