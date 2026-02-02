@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "vercel dev --prod"
+    "start": "vercel dev --prod",
     "build:css": "tailwindcss -i src/style.css -o public/style.css",
     "watch:css": "tailwindcss -i src/style.css -o public/style.css --watch",
     "build": "npm install && npm run build:css",
