@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Owen</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <div class="container mx-auto max-w-3xl p-6 md:p-12">
+        <header class="text-center mb-16">
+            <h1 class="text-6xl font-bold text-gray-900 mb-2">James Owen</h1>
+            <p class="text-xl text-gray-500">Software Engineer</p>
+            <div class="flex justify-center space-x-6 mt-6 text-base">
+                <a href="https://github.com/jamoowen" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 transition-colors">github.com/jamoowen</a>
+                <a href="https://www.linkedin.com/in/jamesowen24/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:text-indigo-800 transition-colors">linkedin.com/in/jamesowen24</a>
+            </div>
+        </header>
+
+        <section class="mb-16 flex flex-col space-y-2" >
+            <!-- <h2 class="text-3xl font-bold text-gray-900 border-b-2 border-gray-200 pb-3 mb-8">About Me</h2> -->
+            <p class="text-lg leading-relaxed pb-2">
+            Hi, I'm James 👋
+            </p>
+            <p class="text-md leading-relaxed">
+            I'm a software engineer with experience spanning across fintech and crypto industries. I am primarily a Backend Engineer and have written a lot of Typescript and Golang on the server. I am generally open to backend roles which present interesting challenges and get excited when given the opportunity to learn something new. 
+            </p>
+            <p class="text-md leading-relaxed">
+            I am currently learning: Rust 🦀
+            </p>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 border-b-2 border-gray-200 pb-3 mb-8">Experience</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800">Superpayments <span class="text-base font-normal text-gray-500">| London, UK | Sep 2025 - Present</span></h3>
+                    <p class="text-gray-600 mt-1">Building backend infrastructure to make ecom payments free.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800">Flatpeak <span class="text-base font-normal text-gray-500">| London, UK | May 2025 - Sep 2025</span></h3>
+                    <p class="text-gray-600 mt-1">Contract position building out the Flatpeak platform.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800">Tribally Studios <span class="text-base font-normal text-gray-500">| Remote | Aug 2023 - May 2025</span></h3>
+                    <p class="text-gray-600 mt-1">Built full stack features for a web3 startup.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800">Sagacity Solutions <span class="text-base font-normal text-gray-500">| London, UK | Aug 2022 - Aug 2023</span></h3>
+                    <p class="text-gray-600 mt-1">Built data pipelines and analytics models.</p>
+                </div>
+                 <div>
+                    <h3 class="text-xl font-semibold text-gray-800">Park Boxing London <span class="text-base font-normal text-gray-500">| London, UK | Jun 2021 - Aug 2023</span></h3>
+                    <p class="text-gray-600 mt-1">Founded and ran a successful mobile personal training business.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Contact</h2>
+            <div class=" w-full">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-600 mb-1">Your Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 transition">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-600 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 transition"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full bg-gray-800 text-white py-3 px-4 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+                <p id="form-status" class="mt-4 text-center text-sm"></p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            const statusEl = document.getElementById('form-status');
+            const button = form.querySelector('button');
+
+            statusEl.textContent = 'Sending...';
+            statusEl.className = 'mt-4 text-center text-sm text-gray-500';
+            button.disabled = true;
+
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                if (response.ok) {
+                    statusEl.textContent = 'Message sent successfully!';
+                    statusEl.className = 'mt-4 text-center text-sm text-green-600';
+                    form.reset();
+                } else {
+                    const errorData = await response.json();
+                    statusEl.textContent = 'Error: ' + (errorData.message || 'Something went wrong.');
+                    statusEl.className = 'mt-4 text-center text-sm text-red-600';
+                }
+            } catch (error) {
+                statusEl.textContent = 'Error: Could not send message.';
+                statusEl.className = 'mt-4 text-center text-sm text-red-600';
+            } finally {
+                button.disabled = false;
+            }
+        });
+    </script>
+
+</body>
+</html>

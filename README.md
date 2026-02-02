@@ -1,15 +1,34 @@
-Hello! 
+# Simple Portfolio
 
-This is the Repo for My portfolio.
+1.  **Environment Variables**: Create a `.env` file in the root of the project and add the following variables. You can use the `.env.example` file as a template.
+    ```
+    BURNER_USERNAME=<your-burner-email>
+    BURNER_PASSWORD=<your-burner-email-password>
+    PERSONAL_EMAIL=<your-personal-email>
+    ```
 
-It was Built with Typescript/NextJS and Hosted on Vercel. I wanted the UX of a simple single page application,
-but the performance and flexibility of different routes. 
-I try and add most things onto the first page, wrapping each component in a Suspense tag.
-this enables streaming, and loads the HTML sequentially, significantly speeding up the performance
-and allowing the first part of the main page to render efficiently.
+2.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-Sections like Projects, and blog, feature in the main page, but also have a dedicated route,
-with more information and detail.
+3.  **Build Command**: This command will install dependencies and build the Tailwind CSS.
+    ```bash
+    npm run build
+    ```
 
-I used the react-multi-carousel package for animating the typing on the Landing page.
-I used react-type-animation for the carousel in the about section of the main page.
+## Running the project
+
+To start the server in production mode, run:
+
+```bash
+npm start
+```
+
+To start the server in development mode (with live-reloading for `index.html` and automatic Tailwind CSS recompilation), run:
+
+```bash
+npm run dev
+```
+
+The server will start on `http://localhost:3000`.
